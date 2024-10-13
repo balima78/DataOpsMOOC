@@ -1,0 +1,84 @@
+# Instalação
+
+## Software
+
+Antes de começarmos a trabalhar com _DataOps_, é importante garantir que temos as ferramentas corretas instaladas no nosso computador. 
+
+Neste capítulo, vamos instalar os principais _softwares_ que serão utilizados ao longo do curso: R, Rtools (para Windows), RStudio, Git e Quarto.
+
+Recomendamos seguir as instruções passo a passo e utilizar as configurações padrão durante as instalações, a menos que tenham necessidades específicas.
+
+1. Instalação do R  
+R é uma linguagem de programação focada em análise estatística e científica de dados. Vamos utilizá-la para construir scripts e automatizar processos em _DataOps_.
+
+    - Link de Download: [Download R](https://cran.r-project.org/bin/windows/base/)
+    - Selecione o seu sistema operacional (Windows, macOS ou Linux) e baixe a versão mais recente do R.
+    - Siga as instruções do instalador e opte pela instalação padrão.
+
+2. Instalação do Rtools (para Windows)  
+Se você estiver utilizando Windows, precisará instalar o Rtools, um conjunto de ferramentas necessárias para compilar pacotes do R.
+
+    - Link de Download: [Download Rtools](https://cran.r-project.org/bin/windows/Rtools/)
+    - Faça o download da versão compatível com a sua versão do R. Por exemplo, para o R-4.4.1 deverá ser instalado o RTools 4.4 
+    - Instale seguindo as configurações padrão e certifique-se de marcar a opção para adicionar Rtools ao caminho do sistema (PATH).
+
+3. Instalação do RStudio  
+RStudio é um ambiente de desenvolvimento integrado (IDE) que facilita o trabalho com R, Git e Quarto, proporcionando uma interface amigável para escrever e executar código.
+
+    - Link de Download: [Download RStudio](https://posit.co/download/rstudio-desktop/)
+    - Baixe a versão mais recente para o seu sistema operacional.
+    - Execute o instalador e siga as instruções para uma instalação padrão.
+
+4. Instalação do Git  
+Git é uma ferramenta de controlo de versões que permite rastrear alteração ao código, colaborar com outros usuários e gerir projetos de forma eficiente. Será fundamental para o gestão dos seus projetos _DataOps_.
+
+    - Link de Download: [Download Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+    - Escolha o instalador apropriado para o seu sistema operacional (Windows, macOS ou Linux).
+    - Durante a instalação, siga as instruções para uma instalação padrão.
+
+5. Instalação do Quarto  
+Quarto é uma ferramenta para criar documentos reprodutíveis, relatórios dinâmicos e dashboards a partir de código R. Iremos utilizá-lo para gerar a documentação e relatórios de nossos projetos de forma automatizada.
+
+    - Link de Download: [Download Quarto](https://quarto.org/docs/get-started/)
+    - Baixe a versão mais recente e siga as instruções para uma instalação padrão no seu sistema operacional.
+
+Após a instalação, verificamos se o Quarto foi instalado correctamente abrindo o terminal ou *prompt* de comando e digitando `quarto check`. Se tudo estiver bem, veremos uma mensagem confirmando que o Quarto está pronto para uso.
+
+## Conta GitLab
+
+O **GitLab** é uma plataforma de gestão de repositórios Git que permite aos desenvolvedores colaborar em projetos de software e/ou de dados. 
+
+Além disto, o GitLab fornece recursos avançados de gestão de projetos, como acompanhamento de tarefas, gestão de *backlog* e integração com *kanban*, que podem ser muito úteis em projectos de *DataOps*.
+
+Uma alternativa popular ao GitLab é o GitHub. Os participantes que prefiram esta segunda opção poderão continuar a acompanhar o curso sem grandes entraves.
+
+### Como Criar uma Conta no GitLab
+
+1. Se ainda não tivermos uma conta no GitLab, podemos aceder ao [site do GitLab](https://gitlab.com/).
+
+2. Na página inicial, clicamos no botão _Sign In_ (Registrar) no canto superior direito.
+
+3. Depois de irmos para [_Register now_](https://gitlab.com/users/sign_up), podemos preencher o Formulário de registo:
+
+![](images/gitlab_new.jpg) 
+
+Após preenchermos todas as informações, clicamos em botão "Continue" (continuar).
+
+4. Verificamos o E-mail:
+
+receberemos um e-mail com um código de verificação. Introduzimos o código na pagina do GitLab para ativar a conta.
+
+5. Configuramos o nosso Perfil:
+
+Após verificarmos a conta, podemos fazer a configuração do nosso perfil, adicionando uma foto e informações adicionais, se assim o desejarmos.
+
+## Configurar RStudio
+
+Instalado o *software* e criada a conta no GitLab, podemos agora fazer algumas configurações no RStudio, de onde teremos acesso não só ao R, ao Git e ao Quarto mas também ao GitLab.
+
+{{< video https://www.youtube.com/watch?v=QZRBRHpjXOw >}}
+
+## A seguir
+
+Agora que instalamos todas as ferramentas necessárias, estamos prontos para começar a explorar como aplicá-las nos nossos projectos de _DataOps_. No próximo capítulo, iremos introduzir os conceitos básicos de controlo de versões com o Git e começar a configurar nosso primeiro repositório.
+

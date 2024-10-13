@@ -1,0 +1,30 @@
+project:
+  type: book
+  output-dir: docs
+
+book:
+  title: "Princípios básicos de DataOps"
+  author: "Bruno A Lima"
+  date: "2024-10-12"
+  search: true
+  repo-url: "https://github.com/balima78/rap_pt"
+  repo-actions: [edit, issue]
+  repo-branch: "main"
+  favicon: images/coverDOB.jfif
+  issue-url: "https://github.com/balima78/rap_pt/issues"
+  chapters:
+    - index.qmd
+    - 100-intro.qmd
+    - 200-instal.qmd
+    - 300-materia.qmd
+    - 900-summary.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt
+

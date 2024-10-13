@@ -1,0 +1,38 @@
+# Matéria prima
+
+Os dados são a matéria prima de qualquer cientista de dados. Como para qualquer outro artesão, sem matéria prima não podemos criar nenhum produto de dados.
+
+## Índice de Preços de Habitação
+
+Neste curso, utilizaremos dados reais para construir nosso pipeline de DataOps. Os dados que usaremos são fornecidos pelo Instituto Nacional de Estatística (INE) e referem-se ao Índice de Preços de Habitação. Esses dados monitorizam a variação dos preços de venda de imóveis ao longo do tempo em diferentes regiões e oferecem *insights* valiosos sobre o mercado imobiliário.
+
+[![Destaque Índice de Preços da Habitação](images/ine_IPH.jpg){width=80%}](https://www.ine.pt/xportal/xmain?xpid=INE&xpgid=ine_destaques&DESTAQUESdest_boui=645841545&DESTAQUESmodo=2)
+
+Infelizmente, os dados são disponibilizados num ficheiro excel e não estão num formato adequado para serem analizados com o R.
+
+Assim, as nossas tarefas serão:
+
++ extrair os dados do Excel para um formato de *data frame*;
++ fazer algumas tabelas e gráficos para o nosso relatório
+
+## Criar repositório
+
+Agora que já temos uma ideia do que vamos fazer, podemos criar o nosso primeiro repositório no GitLab.
+
+
+
+## Clonar o repositório
+
+## Extrair dados do Excel
+
+Neste projecto vamos usar apenas os dados de 2019 a 2024 das folhas Q1 a Q4 do ficheiro Excel. Para isto vamos construir um *script* R que fará o *download* dos dados originais e posteriormente preparará os dados no formato que queremos.
+
+
+[*script* R](R/prepara_dados.R)
+
+
+**alterar o .gitignore**
+
+**commit**
+
+**push**
