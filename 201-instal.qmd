@@ -16,7 +16,7 @@ R é uma linguagem de programação focada em análise estatística e científic
     - Siga as instruções do instalador e opte pela instalação padrão.
 
 2. Instalação do Rtools (para Windows)  
-Se você estiver utilizando Windows, precisará instalar o Rtools, um conjunto de ferramentas necessárias para compilar pacotes do R.
+Se for utilizador do Windows, precisa instalar o Rtools, um conjunto de ferramentas necessárias para compilar pacotes do R.
 
     - Link de Download: [Download Rtools](https://cran.r-project.org/bin/windows/Rtools/)
     - Faça o download da versão compatível com a sua versão do R. Por exemplo, para o R-4.4.1 deverá ser instalado o RTools 4.4 
@@ -30,19 +30,19 @@ RStudio é um ambiente de desenvolvimento integrado (IDE) que facilita o trabalh
     - Execute o instalador e siga as instruções para uma instalação padrão.
 
 4. Instalação do Git  
-Git é uma ferramenta de controlo de versões que permite rastrear alteração ao código, colaborar com outros usuários e gerir projetos de forma eficiente. Será fundamental para o gestão dos seus projetos _DataOps_.
+Git é uma ferramenta de controlo de versões que permite rastrear alterações ao código, colaborar com outros usuários e gerir projetos de forma eficiente. Será fundamental para o gestão dos nossos projetos em _DataOps_.
 
     - Link de Download: [Download Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
     - Escolha o instalador apropriado para o seu sistema operacional (Windows, macOS ou Linux).
     - Durante a instalação, siga as instruções para uma instalação padrão.
 
 5. Instalação do Quarto  
-Quarto é uma ferramenta para criar documentos reprodutíveis, relatórios dinâmicos e dashboards a partir de código R. Iremos utilizá-lo para gerar a documentação e relatórios de nossos projetos de forma automatizada.
+Quarto é uma ferramenta para criar documentos reprodutíveis, relatórios dinâmicos e dashboards, a partir de código R. Iremos utilizá-lo para gerar o *dashboard* do nosso projetos de forma automatizada.
 
     - Link de Download: [Download Quarto](https://quarto.org/docs/get-started/)
     - Baixe a versão mais recente e siga as instruções para uma instalação padrão no seu sistema operacional.
 
-Após a instalação, verificamos se o Quarto foi instalado correctamente abrindo o terminal ou *prompt* de comando e digitando `quarto check`. Se tudo estiver bem, veremos uma mensagem confirmando que o Quarto está pronto para uso.
+Após a instalação, verificamos se o Quarto foi instalado correctamente abrindo o terminal ou *prompt* de comando e digitando `quarto check`. Se tudo estiver bem, veremos uma mensagem confirmando que o Quarto está pronto para ser usado.
 
 ## Conta GitLab
 
@@ -66,7 +66,7 @@ Após preenchermos todas as informações, clicamos em botão "Continue" (contin
 
 4. Verificamos o E-mail:
 
-receberemos um e-mail com um código de verificação. Introduzimos o código na pagina do GitLab para ativar a conta.
+Receberemos um e-mail com um código de verificação. Introduzimos o código na página do GitLab para activar a conta.
 
 5. Configuramos o nosso Perfil:
 
@@ -76,9 +76,39 @@ Após verificarmos a conta, podemos fazer a configuração do nosso perfil, adic
 
 Instalado o *software* e criada a conta no GitLab, podemos agora fazer algumas configurações no RStudio, de onde teremos acesso não só ao R, ao Git e ao Quarto mas também ao GitLab.
 
-{{< video https://www.youtube.com/watch?v=QZRBRHpjXOw >}}
+{{< video https://youtu.be/yEA2u6f3coo >}}
+
+## Verificação de aprendizagem
+
+**O que é o GitLab?**
+
+```{r}
+#| echo: false
+q_gitlab1 <- c(
+   "Uma ferramenta exclusiva para desenvolvedores web",
+   answer = "Uma plataforma de gestão de repositórios Git",
+   "Um editor de texto online"
+)
+```
+
+`r longmcq(q_gitlab1)`
+
+**Qual é a principal alternativa ao GitLab mencionada?**
+
+```{r}
+#| echo: false
+q_gitlab2 <- c(
+  answer = "GitHub",
+   "Bitbucket",
+   "SourceForge",
+   "Mercurial"
+)
+```
+
+`r longmcq(q_gitlab2)`     
+
 
 ## A seguir
 
-Agora que instalamos todas as ferramentas necessárias, estamos prontos para começar a explorar como aplicá-las nos nossos projectos de _DataOps_. No próximo capítulo, iremos introduzir os conceitos básicos de controlo de versões com o Git e começar a configurar nosso primeiro repositório.
+Agora que instalamos todas as ferramentas necessárias, estamos prontos para começar a explorar como as podemos usar nos nossos projectos em _DataOps_. No próximo capítulo, iremos introduzir os conceitos básicos de controlo de versões com o Git e começar a configurar o nosso primeiro repositório.
 

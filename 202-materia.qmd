@@ -1,0 +1,87 @@
+# Preparar os dados
+
+Os dados são a matéria prima de qualquer cientista de dados. Como acontece com qualquer outro artesão, sem matéria prima não podemos criar nenhum produto de dados.
+
+## Índice de Preços de Habitação
+
+Neste curso, utilizaremos dados reais para construir o nosso pipeline de DataOps. Os dados que usaremos são fornecidos pelo Instituto Nacional de Estatística (INE) e referem-se ao Índice de Preços de Habitação. Esses dados monitorizam a variação dos preços de venda de imóveis ao longo do tempo em diferentes regiões e oferecem *insights* valiosos sobre o mercado imobiliário.
+
+[![Destaque Índice de Preços da Habitação](images/ine_IPH.jpg){width=80%}](https://www.ine.pt/xportal/xmain?xpid=INE&xpgid=ine_destaques&DESTAQUESdest_boui=645841545&DESTAQUESmodo=2)
+
+Infelizmente, os dados são disponibilizados num ficheiro Excel e não estão num formato adequado para serem analisados com o R.
+
+Assim, as nossas tarefas serão:
+
++ baixar os dados que estão no site do INE; 
++ extrair os dados do Excel para um formato de *data frame*;
++ fazer algumas tabelas e gráficos para o nosso *dashboard*.
+
+## Criar repositório
+
+Agora que já temos uma ideia do que vamos fazer, podemos criar o nosso primeiro repositório no GitLab.
+
+{{< video https://youtu.be/S_kn0a2-v-0 >}}
+
+## Projecto local
+
+### Clonar o repositório
+
+Criado o novo projecto no GitLab, vamos cloná-lo para o nosso *pc* local.
+
+{{< video https://youtu.be/kH_CqwfxLbM >}}
+
+### O primeiro *commit*
+
+O projecto no nosso *pc* local foi criado com controlo de versões, pelo que podemos começar a usar o Git.
+
+{{< video https://youtu.be/yeT5BToqTUg >}}
+
+## Extrair dados do Excel
+
+Neste projecto vamos usar apenas os dados de 2019 a 2024 das folhas Q1, Q5 e Q6 do ficheiro Excel. Para isto vamos construir um *script* R que fará o *download* dos dados originais e posteriormente preparará os dados no formato que queremos.
+
+{{< video https://youtu.be/vpCASQ7p49c >}}
+
+[*script* R](R/prepara_dados.R)
+
+## Registar alterações
+
+Concluída a preparação dos dados registamos as alterações com o Git, ignorando o ficheiro com os dados originais.
+
+{{< video https://youtu.be/tug28oxUA7o >}}
+
+## Verificação de aprendizagem
+
+**No RStudio, como podemos clonar um repositório do GitLab?**
+
+```{r}
+#| echo: false
+q_rstudio1 <- c(
+   "Executando o comando `git clone` diretamente na consola do RStudio",
+   "Clicando em **Tools** > **Git** > **Clone Project** e fornecendo a URL do repositório",
+   answer = " Navegando até **File** > **New Project** > **Version Control** > **Git** e colando a URL do repositório do GitLab",
+   "Usando o atalho **Ctrl + Shift + C** para clonar o repositório diretamente"
+)
+```
+
+`r longmcq(q_rstudio1)`
+
+**Para que serve o `commit`?**
+
+```{r}
+#| echo: false
+q_rstudio2 <- c(
+   "Para clonar um repositório de Git.",
+   "Para desfazer alterações feitas em um repositório.",
+   "Para integrar diferentes repositórios em um único projeto.",
+   answer = "Para criar um ponto de verificação que salva alterações no repositório e cria um histórico do projeto."
+)
+```
+
+`r longmcq(q_rstudio2)`
+
+## A seguir
+
+Agora que já temos os nossos dados num formato mais adequado, podemos começar a fazer o nosso *dashboard*. No próximo capítulo vamos começar a construir o nosso ficheiro quarto, onde iremos ter algumas visualizações dos dados.
+
+

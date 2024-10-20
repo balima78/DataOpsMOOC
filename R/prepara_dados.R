@@ -1,7 +1,9 @@
 
 url <- "https://www.ine.pt/ngt_server/attachfileu.jsp?look_parentBoui=686649304&att_display=n&att_download=y"
 
-raw_data <- tempfile(tmpdir = "dados\\original", fileext = ".xlsx") # pasta em que guardamos os dados originais
+#raw_data <- tempfile(tmpdir = "dados\\original", fileext = ".xlsx") # pasta em que guardamos os dados originais
+
+raw_data <- paste0("dados\\original\\", "IPH2024.xlsx") # pasta em que guardamos os dados originais
 
 download.file(url, raw_data,
               method = "auto",
@@ -22,7 +24,7 @@ extrai <- function(caminho = raw_data, folha = 'Q1'){
   }
 
 
-extrai(caminho = raw_data, folha = 'Q1')|>
+extrai(caminho = raw_data, folha = 'Q1') |>
   dplyr::rename(periodo = 1,
               ind_tn = 2,
               ind_ex = 3,
@@ -38,7 +40,7 @@ extrai(caminho = raw_data, folha = 'Q1')|>
               vm_ns = 13,
               trs_tn = 14,
               trs_ex = 15,
-              trs_ns = 16)
+              trs_ns = 16) |> write.csv2("dados\\preparados\\iph_q1.csv", row.names = FALSE)
 
 extrai(caminho = raw_data, folha = 'Q5') |>
   dplyr::rename(periodo = 1,
@@ -63,7 +65,7 @@ extrai(caminho = raw_data, folha = 'Q5') |>
                 acr_v = 20,
                 acr_n = 21,
                 mad_v = 22,
-                mad_n = 23)
+                mad_n = 23) |> write.csv2("dados\\preparados\\iph_q5.csv", row.names = FALSE)
 
 extrai(caminho = raw_data, folha = 'Q6') |>
   dplyr::rename(periodo = 1,
@@ -74,4 +76,4 @@ extrai(caminho = raw_data, folha = 'Q6') |>
                 ue_v = 6,
                 ue_n = 7,
                 rst_v = 8,
-                crst_n = 9)
+                crst_n = 9) |> write.csv2("dados\\preparados\\iph_q6.csv", row.names = FALSE)
