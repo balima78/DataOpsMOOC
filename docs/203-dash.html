@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Princípios básicos de DataOps - 3&nbsp; Preparar os dados</title>
+<title>Princípios básicos de DataOps - 4&nbsp; Dashboard Quarto</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./203-dash.html" rel="next">
-<link href="./201-instal.html" rel="prev">
+<link href="./900-summary.html" rel="next">
+<link href="./202-materia.html" rel="prev">
 <link href="./images/coverDOB.jfif" rel="icon">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -83,7 +83,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./202-materia.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Preparar os dados</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./203-dash.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title"><em>Dashboard</em> Quarto</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -131,13 +131,13 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./202-materia.html" class="sidebar-item-text sidebar-link active">
+  <a href="./202-materia.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Preparar os dados</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./203-dash.html" class="sidebar-item-text sidebar-link">
+  <a href="./203-dash.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title"><em>Dashboard</em> Quarto</span></span></a>
   </div>
 </li>
@@ -169,26 +169,21 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#índice-de-preços-de-habitação" id="toc-índice-de-preços-de-habitação" class="nav-link active" data-scroll-target="#índice-de-preços-de-habitação"><span class="header-section-number">3.1</span> Índice de Preços de Habitação</a></li>
-  <li><a href="#criar-repositório" id="toc-criar-repositório" class="nav-link" data-scroll-target="#criar-repositório"><span class="header-section-number">3.2</span> Criar repositório</a></li>
-  <li><a href="#projecto-local" id="toc-projecto-local" class="nav-link" data-scroll-target="#projecto-local"><span class="header-section-number">3.3</span> Projecto local</a>
-  <ul class="collapse">
-  <li><a href="#clonar-o-repositório" id="toc-clonar-o-repositório" class="nav-link" data-scroll-target="#clonar-o-repositório"><span class="header-section-number">3.3.1</span> Clonar o repositório</a></li>
-  <li><a href="#o-primeiro-commit" id="toc-o-primeiro-commit" class="nav-link" data-scroll-target="#o-primeiro-commit"><span class="header-section-number">3.3.2</span> O primeiro <em>commit</em></a></li>
-  </ul></li>
-  <li><a href="#extrair-dados-do-excel" id="toc-extrair-dados-do-excel" class="nav-link" data-scroll-target="#extrair-dados-do-excel"><span class="header-section-number">3.4</span> Extrair dados do Excel</a></li>
-  <li><a href="#registar-alterações" id="toc-registar-alterações" class="nav-link" data-scroll-target="#registar-alterações"><span class="header-section-number">3.5</span> Registar alterações</a></li>
-  <li><a href="#verificação-de-aprendizagem" id="toc-verificação-de-aprendizagem" class="nav-link" data-scroll-target="#verificação-de-aprendizagem"><span class="header-section-number">3.6</span> Verificação de aprendizagem</a></li>
-  <li><a href="#a-seguir" id="toc-a-seguir" class="nav-link" data-scroll-target="#a-seguir"><span class="header-section-number">3.7</span> A seguir</a></li>
+  <li><a href="#um-novo-branch" id="toc-um-novo-branch" class="nav-link active" data-scroll-target="#um-novo-branch"><span class="header-section-number">4.1</span> Um novo <em>branch</em></a></li>
+  <li><a href="#dashboard-iph" id="toc-dashboard-iph" class="nav-link" data-scroll-target="#dashboard-iph"><span class="header-section-number">4.2</span> <em>Dashboard</em> IPH</a></li>
+  <li><a href="#merge-request" id="toc-merge-request" class="nav-link" data-scroll-target="#merge-request"><span class="header-section-number">4.3</span> <em>merge request</em></a></li>
+  <li><a href="#branch-de-desenvolvimento" id="toc-branch-de-desenvolvimento" class="nav-link" data-scroll-target="#branch-de-desenvolvimento"><span class="header-section-number">4.4</span> <em>branch</em> de desenvolvimento</a></li>
+  <li><a href="#verificação-de-aprendizagem" id="toc-verificação-de-aprendizagem" class="nav-link" data-scroll-target="#verificação-de-aprendizagem"><span class="header-section-number">4.5</span> Verificação de aprendizagem</a></li>
+  <li><a href="#a-seguir" id="toc-a-seguir" class="nav-link" data-scroll-target="#a-seguir"><span class="header-section-number">4.6</span> A seguir</a></li>
   </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/balima78/DataOpsMOOC/edit/main/202-materia.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/balima78/DataOpsMOOC/issues" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
+<div class="toc-actions"><ul><li><a href="https://github.com/balima78/DataOpsMOOC/edit/main/203-dash.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/balima78/DataOpsMOOC/issues" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Preparar os dados</span></h1>
+<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title"><em>Dashboard</em> Quarto</span></h1>
 </div>
 
 
@@ -205,67 +200,53 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Os dados são a matéria prima de qualquer cientista de dados. Como acontece com qualquer outro artesão, sem matéria prima não podemos criar nenhum produto de dados.</p>
-<section id="índice-de-preços-de-habitação" class="level2" data-number="3.1">
-<h2 data-number="3.1" class="anchored" data-anchor-id="índice-de-preços-de-habitação"><span class="header-section-number">3.1</span> Índice de Preços de Habitação</h2>
-<p>Neste curso, utilizaremos dados reais para construir o nosso pipeline de DataOps. Os dados que usaremos são fornecidos pelo Instituto Nacional de Estatística (INE) e referem-se ao Índice de Preços de Habitação. Esses dados monitorizam a variação dos preços de venda de imóveis ao longo do tempo em diferentes regiões e oferecem <em>insights</em> valiosos sobre o mercado imobiliário.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="https://www.ine.pt/xportal/xmain?xpid=INE&amp;xpgid=ine_destaques&amp;DESTAQUESdest_boui=645841545&amp;DESTAQUESmodo=2"><img src="images/ine_IPH.jpg" class="img-fluid figure-img" style="width:80.0%" alt="Destaque Índice de Preços da Habitação"></a></p>
-<figcaption>Destaque Índice de Preços da Habitação</figcaption>
-</figure>
-</div>
-<p>Infelizmente, os dados são disponibilizados num ficheiro Excel e não estão num formato adequado para serem analisados com o R.</p>
-<p>Assim, as nossas tarefas serão:</p>
+<p>Neste projecto temos como objectivo construir um <em>dashboard</em> para descrevermos o Índice de Preços da Habitação (IPC) a partir dos dados obtidos no portal do INE.</p>
+<p>Criar <em>dashboards</em> com Quarto oferece-nos muitas vantagens, especialmente quando trabalhamos com o R. Podemos combinar visualizações interactivas com um <em>layout</em> e <em>design</em> costumizável, facilitando o ajuste a diferentes dispositivos, como <em>mobile</em> e <em>desktop</em>.</p>
+<p>Outra vantagem é sua flexibilidade de publicação, que permite compartilhar os <em>dashboards</em> <em>online</em> com apenas alguns cliques.</p>
+<section id="um-novo-branch" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="um-novo-branch"><span class="header-section-number">4.1</span> Um novo <em>branch</em></h2>
+<p>Criar um novo <em>branch</em> no Git é uma prática fundamental no controlo de versões que nos permite:</p>
 <ul>
-<li>baixar os dados que estão no site do INE;</li>
-<li>extrair os dados do Excel para um formato de <em>data frame</em>;</li>
-<li>fazer algumas tabelas e gráficos para o nosso <em>dashboard</em>.</li>
+<li><p>Isolar funcionalidades: num <em>branch</em> podemos trabalhar numa nove funcionalidade corrigir <em>bugs</em> ou experimentar sem interferir com o código principal (geralmente o <em>branch main</em> ou <em>master</em>);</p></li>
+<li><p>Facilitar a colaboração: Em equipa, cada desenvolvedor pode trabalhar em uma tarefa específica no seu próprio <em>branch</em>. Isso facilita o trabalho simultâneo, pois evita que uma pessoa sobrescreva o código de outra acidentalmente.</p></li>
+<li><p>Histórico organizado: os <em>branches</em> ajudam a manter o histórico de <em>commits</em> mais organizado. Cada <em>branch</em> representa uma unidade de trabalho específica, o que facilita a revisão do histórico do projeto e ajuda a entender o desenvolvimento das funcionalidades.</p></li>
+<li><p>Facilidade em reverter e testar: como as alterações ficam num <em>branch</em> separado, podemos testar e reverter mas facilmente o nosso código, se houver erros.</p></li>
 </ul>
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/AjZg4PoitLM" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
 </section>
-<section id="criar-repositório" class="level2" data-number="3.2">
-<h2 data-number="3.2" class="anchored" data-anchor-id="criar-repositório"><span class="header-section-number">3.2</span> Criar repositório</h2>
-<p>Agora que já temos uma ideia do que vamos fazer, podemos criar o nosso primeiro repositório no GitLab.</p>
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/S_kn0a2-v-0" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<section id="dashboard-iph" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="dashboard-iph"><span class="header-section-number">4.2</span> <em>Dashboard</em> IPH</h2>
+<p>O nosso <em>dashboard</em> é construído por partes, a partir dos dados que preparamos para o IPH.</p>
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/OzSiAs1lrNQ" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
 </section>
-<section id="projecto-local" class="level2" data-number="3.3">
-<h2 data-number="3.3" class="anchored" data-anchor-id="projecto-local"><span class="header-section-number">3.3</span> Projecto local</h2>
-<section id="clonar-o-repositório" class="level3" data-number="3.3.1">
-<h3 data-number="3.3.1" class="anchored" data-anchor-id="clonar-o-repositório"><span class="header-section-number">3.3.1</span> Clonar o repositório</h3>
-<p>Criado o novo projecto no GitLab, vamos cloná-lo para o nosso <em>pc</em> local.</p>
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/kH_CqwfxLbM" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<section id="merge-request" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="merge-request"><span class="header-section-number">4.3</span> <em>merge request</em></h2>
+<p>Quando estamos satisfeitos com o nosso desenvolvimento, devemos passar as funcionalidades criadas para o <em>branch</em> principal (<em>main</em>) do nosso repositório.</p>
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/Ey-F7KS6WQc" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
 </section>
-<section id="o-primeiro-commit" class="level3" data-number="3.3.2">
-<h3 data-number="3.3.2" class="anchored" data-anchor-id="o-primeiro-commit"><span class="header-section-number">3.3.2</span> O primeiro <em>commit</em></h3>
-<p>O projecto no nosso <em>pc</em> local foi criado com controlo de versões, pelo que podemos começar a usar o Git.</p>
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/yeT5BToqTUg" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<section id="branch-de-desenvolvimento" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="branch-de-desenvolvimento"><span class="header-section-number">4.4</span> <em>branch</em> de desenvolvimento</h2>
+<p>Dividimos o nosso trabalho em <em>branches</em> de desenvolvimento que ao ficarem concluídos são <em>mergidos</em> para o <em>main branch</em>, no GitLab.</p>
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/t5xOjJxYHmw" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<p>Quando damos por concluída esta parte do desenvolvimento, fazemos o <em>commit</em> dass alterações, o <em>push</em> para o GitLab e finalmente o <em>merge</em> para o <em>main branch</em>.</p>
+<p>Finalmente, voltamos ao projecto no nosso pc local e fazemos o <em>pull</em> do <em>main branch</em> do GitLab:</p>
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/zQDiQdRHR3M" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<p><a href="R/dash_IPH.qmd"><em>script</em> Quarto</a></p>
 </section>
-</section>
-<section id="extrair-dados-do-excel" class="level2" data-number="3.4">
-<h2 data-number="3.4" class="anchored" data-anchor-id="extrair-dados-do-excel"><span class="header-section-number">3.4</span> Extrair dados do Excel</h2>
-<p>Neste projecto vamos usar apenas os dados de 2019 a 2024 das folhas Q1, Q5 e Q6 do ficheiro Excel. Para isto vamos construir um <em>script</em> R que fará o <em>download</em> dos dados originais e posteriormente preparará os dados no formato que queremos.</p>
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/vpCASQ7p49c" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<p><a href="R/prepara_dados.R"><em>script</em> R</a></p>
-</section>
-<section id="registar-alterações" class="level2" data-number="3.5">
-<h2 data-number="3.5" class="anchored" data-anchor-id="registar-alterações"><span class="header-section-number">3.5</span> Registar alterações</h2>
-<p>Concluída a preparação dos dados registamos as alterações com o Git, ignorando o ficheiro com os dados originais.</p>
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/tug28oxUA7o" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-</section>
-<section id="verificação-de-aprendizagem" class="level2" data-number="3.6">
-<h2 data-number="3.6" class="anchored" data-anchor-id="verificação-de-aprendizagem"><span class="header-section-number">3.6</span> Verificação de aprendizagem</h2>
-<p><strong>No RStudio, como podemos clonar um repositório do GitLab?</strong></p>
-<div id="radio_CGFQBAMWFD" class="webex-radiogroup">
-<label><input type="radio" autocomplete="off" name="radio_CGFQBAMWFD" value=""> <span>Executando o comando <code>git clone</code> diretamente na consola do RStudio.</span></label><label><input type="radio" autocomplete="off" name="radio_CGFQBAMWFD" value=""> <span>Clicando em <strong>Tools</strong> &gt; <strong>Git</strong> &gt; <strong>Clone Project</strong> e fornecendo a URL do repositório.</span></label><label><input type="radio" autocomplete="off" name="radio_CGFQBAMWFD" value="answer"> <span> Navegando até <strong>File</strong> &gt; <strong>New Project</strong> &gt; <strong>Version Control</strong> &gt; <strong>Git</strong> e colando a URL do repositório do GitLab.</span></label><label><input type="radio" autocomplete="off" name="radio_CGFQBAMWFD" value=""> <span>Usando o atalho <strong>Ctrl + Shift + C</strong> para clonar o repositório diretamente.</span></label>
+<section id="verificação-de-aprendizagem" class="level2" data-number="4.5">
+<h2 data-number="4.5" class="anchored" data-anchor-id="verificação-de-aprendizagem"><span class="header-section-number">4.5</span> Verificação de aprendizagem</h2>
+<p><strong>Qual das seguintes práticas é facilitada ao criar um novo <em>branch</em> no Git?</strong></p>
+<div id="radio_OYZBMWGWCM" class="webex-radiogroup">
+<label><input type="radio" autocomplete="off" name="radio_OYZBMWGWCM" value=""> <span>Garantir que todo o código seja permanentemente excluído quando já não é necessário.</span></label><label><input type="radio" autocomplete="off" name="radio_OYZBMWGWCM" value=""> <span>Garantir que mais ninguém pode mexer no nosso código.</span></label><label><input type="radio" autocomplete="off" name="radio_OYZBMWGWCM" value="answer"> <span>Facilitar a colaboração, organizar o histórico de commits e isolar funcionalidades.</span></label><label><input type="radio" autocomplete="off" name="radio_OYZBMWGWCM" value=""> <span>Publicar o projeto automaticamente na internet.</span></label>
 </div>
-<p><strong>Para que serve o <code>commit</code>?</strong></p>
-<div id="radio_EPKESNUUUU" class="webex-radiogroup">
-<label><input type="radio" autocomplete="off" name="radio_EPKESNUUUU" value=""> <span>Para clonar um repositório de Git.</span></label><label><input type="radio" autocomplete="off" name="radio_EPKESNUUUU" value=""> <span>Para desfazer alterações feitas em um repositório.</span></label><label><input type="radio" autocomplete="off" name="radio_EPKESNUUUU" value=""> <span>Para integrar diferentes repositórios em um único projeto.</span></label><label><input type="radio" autocomplete="off" name="radio_EPKESNUUUU" value="answer"> <span>Para criar um ponto de verificação que salva alterações no repositório e cria um histórico do projeto.</span></label>
+<p><strong>Por que é que o uso de <em>branches</em> com o Git é importante para o desenvolvimento colaborativo?</strong></p>
+<div id="radio_YJKMAPJECF" class="webex-radiogroup">
+<label><input type="radio" autocomplete="off" name="radio_YJKMAPJECF" value=""> <span>Porque permite organizar visualizações interativas nos dashboards.</span></label><label><input type="radio" autocomplete="off" name="radio_YJKMAPJECF" value="answer"> <span>Porque facilita a experimentação e colaboração sem interferir no código principal.</span></label><label><input type="radio" autocomplete="off" name="radio_YJKMAPJECF" value=""> <span>Porque permite a publicação automática do código online.</span></label><label><input type="radio" autocomplete="off" name="radio_YJKMAPJECF" value=""> <span>Porque organiza automaticamente os arquivos do projeto.</span></label>
 </div>
 </section>
-<section id="a-seguir" class="level2" data-number="3.7">
-<h2 data-number="3.7" class="anchored" data-anchor-id="a-seguir"><span class="header-section-number">3.7</span> A seguir</h2>
-<p>Agora que já temos os nossos dados num formato mais adequado, podemos começar a fazer o nosso <em>dashboard</em>. No próximo capítulo vamos começar a construir o nosso ficheiro quarto, onde iremos ter algumas visualizações dos dados.</p>
+<section id="a-seguir" class="level2" data-number="4.6">
+<h2 data-number="4.6" class="anchored" data-anchor-id="a-seguir"><span class="header-section-number">4.6</span> A seguir</h2>
+<p>Já temos o nosso <em>dashboard</em> (pelo menos a primeira versão) e já aprendemos a trabalhar com <em>branchs</em> e a fazer <em>merge</em> mas o Git permite-nos mais. No próximo capítulo poderemos aprofundar nas possibilidades do controlo de versões com o Git.</p>
 
 
 </section>
@@ -888,13 +869,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./201-instal.html" class="pagination-link" aria-label="Instalação">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Instalação</span></span>
+      <a href="./202-materia.html" class="pagination-link" aria-label="Preparar os dados">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Preparar os dados</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./203-dash.html" class="pagination-link" aria-label="*Dashboard* Quarto">
-        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title"><em>Dashboard</em> Quarto</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./900-summary.html" class="pagination-link" aria-label="Summary">
+        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Summary</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -903,4 +884,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/balima78/DataOpsMOOC/edit/main/202-materia.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/balima78/DataOpsMOOC/issues" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/balima78/DataOpsMOOC/edit/main/203-dash.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/balima78/DataOpsMOOC/issues" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>

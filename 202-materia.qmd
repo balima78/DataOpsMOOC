@@ -57,10 +57,10 @@ Concluída a preparação dos dados registamos as alterações com o Git, ignora
 ```{r}
 #| echo: false
 q_rstudio1 <- c(
-   "Executando o comando `git clone` diretamente na consola do RStudio",
-   "Clicando em **Tools** > **Git** > **Clone Project** e fornecendo a URL do repositório",
-   answer = " Navegando até **File** > **New Project** > **Version Control** > **Git** e colando a URL do repositório do GitLab",
-   "Usando o atalho **Ctrl + Shift + C** para clonar o repositório diretamente"
+   "Executando o comando `git clone` diretamente na consola do RStudio.",
+   "Clicando em **Tools** > **Git** > **Clone Project** e fornecendo a URL do repositório.",
+   answer = " Navegando até **File** > **New Project** > **Version Control** > **Git** e colando a URL do repositório do GitLab.",
+   "Usando o atalho **Ctrl + Shift + C** para clonar o repositório diretamente."
 )
 ```
 

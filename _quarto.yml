@@ -18,6 +18,7 @@ book:
   - 100-intro.qmd
   - 201-instal.qmd
   - 202-materia.qmd
+  - 203-dash.qmd
   - 900-summary.qmd
   - Webexercises.qmd
   - references.qmd

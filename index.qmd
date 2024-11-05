@@ -1,7 +1,7 @@
 # Um guia prático com R, Git e Quarto {.unnumbered}
 
 
-![](images/coverDOB.jfif){width=60%}
+![](images/coverDOB2.jpg){width=70%}
 
 ## License
 

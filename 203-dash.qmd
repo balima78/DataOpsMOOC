@@ -1,0 +1,81 @@
+# *Dashboard* Quarto
+
+Neste projecto temos como objectivo construir um *dashboard* para descrevermos o Índice de Preços da Habitação (IPC) a partir dos dados obtidos no portal do INE.
+
+Criar *dashboards* com Quarto oferece-nos muitas vantagens, especialmente quando trabalhamos com o R. Podemos combinar visualizações interactivas com um *layout* e *design* costumizável, facilitando o ajuste a diferentes dispositivos, como *mobile* e *desktop*. 
+
+Outra vantagem é sua flexibilidade de publicação, que permite compartilhar os *dashboards* *online* com apenas alguns cliques.
+ 
+## Um novo *branch*
+
+Criar um novo *branch* no Git é uma prática fundamental no controlo de versões que nos permite:
+
++ Isolar funcionalidades: num *branch* podemos trabalhar numa nove funcionalidade corrigir *bugs* ou experimentar sem interferir com o código principal (geralmente o *branch main* ou *master*);
+
++ Facilitar a colaboração: Em equipa, cada desenvolvedor pode trabalhar em uma tarefa específica no seu próprio *branch*. Isso facilita o trabalho simultâneo, pois evita que uma pessoa sobrescreva o código de outra acidentalmente.
+
++ Histórico organizado: os *branches* ajudam a manter o histórico de *commits* mais organizado. Cada *branch* representa uma unidade de trabalho específica, o que facilita a revisão do histórico do projeto e ajuda a entender o desenvolvimento das funcionalidades.
+
++ Facilidade em reverter e testar: como as alterações ficam num *branch* separado, podemos testar e reverter mas facilmente o nosso código, se houver erros. 
+
+{{< video https://youtu.be/AjZg4PoitLM >}}
+ 
+## *Dashboard* IPH
+
+O nosso *dashboard* é construído por partes, a partir dos dados que preparamos para o IPH.
+
+{{< video https://youtu.be/OzSiAs1lrNQ >}}
+
+## *merge request*
+
+Quando estamos satisfeitos com o nosso desenvolvimento, devemos passar as funcionalidades criadas para o *branch* principal (*main*) do nosso repositório.  
+
+{{< video https://youtu.be/Ey-F7KS6WQc >}}
+
+## *branch* de desenvolvimento
+
+Dividimos o nosso trabalho em *branches* de desenvolvimento que ao ficarem concluídos são *mergidos* para o *main branch*, no GitLab.
+
+{{< video https://youtu.be/t5xOjJxYHmw >}}
+
+Quando damos por concluída esta parte do desenvolvimento, fazemos o *commit* dass alterações, o *push* para o GitLab e finalmente o *merge* para o *main branch*.
+
+Finalmente, voltamos ao projecto no nosso pc local e fazemos o *pull* do *main branch* do GitLab:
+
+{{< video https://youtu.be/zQDiQdRHR3M >}}
+
+[*script* Quarto](R/dash_IPH.qmd)
+
+## Verificação de aprendizagem
+
+**Qual das seguintes práticas é facilitada ao criar um novo *branch* no Git?**
+
+```{r}
+#| echo: false
+q_branch1 <- c(
+   "Garantir que todo o código seja permanentemente excluído quando já não é necessário.",
+   "Garantir que mais ninguém pode mexer no nosso código.",
+   answer = "Facilitar a colaboração, organizar o histórico de commits e isolar funcionalidades.",
+   "Publicar o projeto automaticamente na internet."
+)
+```
+
+`r longmcq(q_branch1)`
+
+**Por que é que o uso de *branches* com o Git é importante para o desenvolvimento colaborativo?**
+
+```{r}
+#| echo: false
+q_branch2 <- c(
+   "Porque permite organizar visualizações interativas nos dashboards.",
+   answer = "Porque facilita a experimentação e colaboração sem interferir no código principal.",
+   "Porque permite a publicação automática do código online.",
+   "Porque organiza automaticamente os arquivos do projeto."
+)
+```
+
+`r longmcq(q_branch2)`
+
+## A seguir
+ 
+Já temos o nosso *dashboard* (pelo menos a primeira versão) e já aprendemos a trabalhar com *branchs* e a fazer *merge* mas o Git permite-nos mais. No próximo capítulo poderemos aprofundar nas possibilidades do controlo de versões com o Git.  

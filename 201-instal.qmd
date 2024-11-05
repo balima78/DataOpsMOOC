@@ -85,15 +85,15 @@ Instalado o *software* e criada a conta no GitLab, podemos agora fazer algumas c
 ```{r}
 #| echo: false
 q_gitlab1 <- c(
-   "Uma ferramenta exclusiva para desenvolvedores web",
-   answer = "Uma plataforma de gestão de repositórios Git",
-   "Um editor de texto online"
+   "Uma ferramenta exclusiva para desenvolvedores web.",
+   answer = "Uma plataforma de gestão de repositórios Git.",
+   "Um editor de texto online."
 )
 ```
 
 `r longmcq(q_gitlab1)`
 
-**Qual é a principal alternativa ao GitLab mencionada?**
+**Qual é a principal alternativa ao GitLab que foi mencionada?**
 
 ```{r}
 #| echo: false

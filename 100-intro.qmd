@@ -17,6 +17,8 @@ A abordagem *DataOps* pode ser aplicada em diversas áreas, incluindo:
 + Indústria Privada: para aumentar a produtividade das equipas de dados e desenvolvimento, permitindo a entrega contínua de *insights* valiosos para tomada de decisões estratégicas.
 + Investigação Académica: para assegurar que estudos e projetos de investigação sejam facilmente reprodutíveis e colaborativos, facilitando a partilha de resultados e o desenvolvimento contínuo da investigação.
 
+![Implementação duma abordagem DataOps](images/dataops.png)
+
 Ao longo deste curso, vamos aprender a tirar partido das capacidades do *R* para a análise estatística de dados, do *Git* para controlo de versões e para a colaboração, e do *Quarto* para gerar *dashboards* reprodutíveis com programação letrada. 
 
 Juntos iremos explorar como estes princípios podem ser aplicados para melhorar a eficiência, a qualidade e a confiabilidade das operações com dados.
@@ -27,6 +29,9 @@ Juntos iremos explorar como estes princípios podem ser aplicados para melhorar 
 
 ```{r}
 #| echo: false
+
+library(webexercises)
+
 q_dataops1 <- c(
   "Um software para gerenciamento de projetos",
   "Um tipo de banco de dados para ciência de dados",
