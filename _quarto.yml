@@ -15,12 +15,15 @@ book:
   issue-url: https://github.com/balima78/DataOpsMOOC/issues
   chapters:
   - index.qmd
-  - 100-intro.qmd
+  - 101-intro.qmd
+  - 102-caracteriza.qmd
   - 201-instal.qmd
   - 202-materia.qmd
   - 203-dash.qmd
+  - 204-versoes.qmd
+  - 205-renv.qmd
+  - 800-avaliacao.qmd
   - 900-summary.qmd
-  - Webexercises.qmd
   - references.qmd
 bibliography: references.bib
 format:

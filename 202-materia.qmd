@@ -1,6 +1,6 @@
 # Preparar os dados
 
-Os dados são a matéria prima de qualquer cientista de dados. Como acontece com qualquer outro artesão, sem matéria prima não podemos criar nenhum produto de dados.
+Os dados são a matéria prima de qualquer cientista de dados. Como acontece com qualquer outro artesão, sem a nossa matéria prima não podemos criar nenhum produto de dados.
 
 ## Índice de Preços de Habitação
 

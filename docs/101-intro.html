@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Princípios básicos de DataOps - 9&nbsp; Conclusão</title>
+<title>Princípios básicos de DataOps - 1&nbsp; Introdução</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -50,8 +50,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./references.html" rel="next">
-<link href="./800-avaliacao.html" rel="prev">
+<link href="./102-caracteriza.html" rel="next">
+<link href="./index.html" rel="prev">
 <link href="./images/coverDOB.jfif" rel="icon">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -103,7 +103,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./900-summary.html"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Conclusão</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./101-intro.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introdução</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -139,7 +139,7 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./101-intro.html" class="sidebar-item-text sidebar-link">
+  <a href="./101-intro.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introdução</span></span></a>
   </div>
 </li>
@@ -187,7 +187,7 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./900-summary.html" class="sidebar-item-text sidebar-link active">
+  <a href="./900-summary.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Conclusão</span></span></a>
   </div>
 </li>
@@ -203,14 +203,20 @@ div.csl-indent {
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#verificação-de-aprendizagem" id="toc-verificação-de-aprendizagem" class="nav-link active" data-scroll-target="#verificação-de-aprendizagem"><span class="header-section-number">1.1</span> Verificação de aprendizagem</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/balima78/DataOpsMOOC/edit/main/101-intro.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/balima78/DataOpsMOOC/issues" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Conclusão</span></h1>
+<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introdução</span></h1>
 </div>
 
 
@@ -227,22 +233,48 @@ div.csl-indent {
 </header>
 
 
-<p>Ao concluirmos o curso introdutório “DataOps basics,” esperamos ter oferecido uma base que permita a implementação dos princípios fundamentais de DataOps em próprios projetos.</p>
-<p>Começamos com uma definição simples de DataOps, sublinhando a sua importância no cenário atual de análise de dados: uma abordagem que permite uma gestão eficiente, automatizada e colaborativa do dados, facilitando a entrega rápida de <em>insights</em> confiáveis e reprodutíveis.</p>
-<p>Neste curso, apresentamos ferramentas essenciais para implementar uma abordagem de DataOps: R, RStudio, Quarto, Git e GitLab. Cada uma desempenha um papel crucial no ciclo de vida dos dados e no fluxo de trabalho da análise de dados. Com estes recursos, exploramos um caso prático com base no Índice de Preços de Habitação do Instituto Nacional de Estatística (INE), dando uma aplicação prática e real aos conceitos de DataOps.</p>
-<p>Ao longo do nosso processo, criamos um repositório no GitLab, que foi clonado localmente para o RStudio, estabelecendo o ponto central para o versionamento de nosso projeto. Durante o desenvolvimento do nosso <em>dashboard</em> em Quarto, realizamos <em>commits</em> das alterações no código, criamos novos <em>branches</em> para experimentar funcionalidades e melhorias, fizemos <em>push</em> das mudanças para o GitLab e concluímos <em>merge requests</em>, unindo o código modificado ao <em>branch</em> principal. Realizamos o <em>pull</em> das alterações aprovadas para o nosso ambiente local, garantindo que as versões estivessem sempre sincronizadas.</p>
-<p>O histórico de <em>commits</em> e <em>merges</em> ficou sempre acessível no RStudio, oferecendo uma visão clara do progresso e permitindo o rastreamento das mudanças feitas ao longo do projeto.</p>
-<p>Introduzimos também o uso do pacote <code>{renv}</code> para registrar as versões dos pacotes R utilizados, e que é essencial para garantirmos a reprodutibilidade e o controle de dependências do projeto, facilitando a manutenção e a execução futura do código, independentemente de atualizações nos pacotes.</p>
-<p>Concluímos, assim, com um exemplo completo, como aplicar DataOps num fluxo de trabalho de análise de dados. A prática com ferramentas de controlo de versão e gestão de pacotes cria uma base sólida para o desenvolvimento de análises robustas, facilitando tanto a colaboração em equipa quanto a evolução contínua dos projetos.</p>
-<p>Quem quiser continuar a aprofundar o mundo do <em>DataOps</em>, encontrará no livro <a href="https://raps-with-r.dev/">Building Reproducible Analytical Pipelines with R</a><span class="citation" data-cites="br">(<a href="references.html#ref-br" role="doc-biblioref">Rodrigues 2023</a>)</span> uma fonte esclarecida e cheia do melhor conteúdo para auxiliar o trabalho a desenvolver por Cientistas de dados, Estatísticos ou Investigadores.</p>
-<p>Esperamos que este curso tenha sido um ponto de partida útil e inspirador na sua jornada em DataOps!</p>
+<p><strong>Princípios básicos de <em>DataOps</em>: um guia prático com R, Git e Quarto</strong> é um curso desenhado para fornecer uma compreensão prática de <em>DataOps</em>, uma metodologia que integra processos de automação e colaboração para melhorar a eficiência em projectos de ciência de dados.</p>
+<p>Na <em>wikipédia</em> podemos encontrar como <a href="https://en.wikipedia.org/wiki/DataOps">definição de <em>DataOps</em></a>, algo como:</p>
+<blockquote class="blockquote">
+<p>DataOps é um conjunto de práticas, processos e tecnologias que combina uma perspetiva integrada e orientada para processos sobre dados com automação e métodos da engenharia de software. Esta abordagem utiliza a gestão de projetos <em>agile</em> para melhorar a qualidade, velocidade e colaboração, promovendo uma cultura de melhoria contínua na área da ciência de dados.</p>
+</blockquote>
+<p>Utilizando ferramentas como R, Git e Quarto, os participantes no curso aprenderão a optimizar o desenvolvimento, a análise e a documentação de dados, garantindo reprodutibilidade, rastreamento de versões e automação dos fluxos de trabalho. Tendo em conta os princípios do <span class="citation" data-cites="manifesto"><span>“The DataOps Manifesto”</span> (<a href="references.html#ref-manifesto" role="doc-biblioref">2024</a>)</span>, o objetivo é desenvolver processos que tenham por base esses princípios e facilitem a entrega de produtos de dados.</p>
+<p>A abordagem <em>DataOps</em> pode ser aplicada em diversas áreas, incluindo:</p>
+<ul>
+<li>Instituições Públicas: para garantir que análises e relatórios sejam gerados de forma consistente e automática, reduzindo o tempo e o esforço manual.</li>
+<li>Indústria Privada: para aumentar a produtividade das equipas de dados e desenvolvimento, permitindo a entrega contínua de <em>insights</em> valiosos para tomada de decisões estratégicas.</li>
+<li>Investigação Académica: para assegurar que estudos e projetos de investigação sejam facilmente reprodutíveis e colaborativos, facilitando a partilha de resultados e o desenvolvimento contínuo da investigação.</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/dataops.png" class="img-fluid figure-img"></p>
+<figcaption>Implementação duma abordagem DataOps</figcaption>
+</figure>
+</div>
+<p>Ao longo deste curso, vamos aprender a tirar partido das capacidades do <em>R</em> para a análise estatística de dados, do <em>Git</em> para controlo de versões e para a colaboração, e do <em>Quarto</em> para gerar <em>dashboards</em> reprodutíveis com programação letrada.</p>
+<p>A definição de processos de análise estatística (Pipelines Analíticos Reprodutíveis) tem por base as melhores práticas da engenharia de software com o objectivo de assegurar a produção de pipelines de dados que são reprodutíveis, auditáveis, eficientes e de grande qualidade <span class="citation" data-cites="rap">(<a href="references.html#ref-rap" role="doc-biblioref">Government Analysis Function 2024</a>)</span></p>
+<p>Juntos iremos explorar como estes princípios podem ser aplicados para melhorar a eficiência, a qualidade e a confiabilidade das operações com dados.</p>
+<section id="verificação-de-aprendizagem" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="verificação-de-aprendizagem"><span class="header-section-number">1.1</span> Verificação de aprendizagem</h2>
+<p><strong>O que é DataOps, segundo a definição apresentada na Wikipédia?</strong></p>
+<div id="radio_NQRSCLYPCB" class="webex-radiogroup">
+<label><input type="radio" autocomplete="off" name="radio_NQRSCLYPCB" value=""> <span>Um software para gerenciamento de projetos</span></label><label><input type="radio" autocomplete="off" name="radio_NQRSCLYPCB" value=""> <span>Um tipo de banco de dados para ciência de dados</span></label><label><input type="radio" autocomplete="off" name="radio_NQRSCLYPCB" value=""> <span>Uma técnica de visualização de dados</span></label><label><input type="radio" autocomplete="off" name="radio_NQRSCLYPCB" value="answer"> <span>Um conjunto de práticas que combina processos de dados com métodos da engenharia de software e gestão de projetos ágeis</span></label>
+</div>
+<p><strong>Em quais áreas a abordagem DataOps pode ser aplicada?</strong></p>
+<div id="radio_XQDHIYFMKA" class="webex-radiogroup">
+<label><input type="radio" autocomplete="off" name="radio_XQDHIYFMKA" value="answer"> <span>Instituições públicas, indústria privada e investigação académica</span></label><label><input type="radio" autocomplete="off" name="radio_XQDHIYFMKA" value=""> <span>Apenas em instituições públicas</span></label><label><input type="radio" autocomplete="off" name="radio_XQDHIYFMKA" value=""> <span>Exclusivamente em empresas de tecnologia</span></label><label><input type="radio" autocomplete="off" name="radio_XQDHIYFMKA" value=""> <span>Somente em projetos de código aberto</span></label>
+</div>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
-<div id="ref-br" class="csl-entry" role="listitem">
-Rodrigues, Bruno. 2023. <span>“Building Reproducible Analytical Pipelines with r.”</span> Independently published. 2023. <a href="https://www.amazon.com/dp/B0C87H6MGF/">https://www.amazon.com/dp/B0C87H6MGF/</a>.
+<div id="ref-rap" class="csl-entry" role="listitem">
+Government Analysis Function. 2024. <span>“Reproducible Analytical Pipelines (RAP).”</span> 2024. <a href="https://analysisfunction.civilservice.gov.uk/support/reproducible-analytical-pipelines/">https://analysisfunction.civilservice.gov.uk/support/reproducible-analytical-pipelines/</a>.
+</div>
+<div id="ref-manifesto" class="csl-entry" role="listitem">
+<span>“The DataOps Manifesto.”</span> 2024. 2024. <a href="https://dataopsmanifesto.org/en/">https://dataopsmanifesto.org/en/</a>.
 </div>
 </div>
+</section>
 
 </main> <!-- /main -->
 <script>
@@ -862,13 +894,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./800-avaliacao.html" class="pagination-link" aria-label="Avaliação final">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Avaliação final</span></span>
+      <a href="./index.html" class="pagination-link" aria-label="Um guia prático com R, Git e Quarto">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Um guia prático com R, Git e Quarto</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./references.html" class="pagination-link" aria-label="Referências">
-        <span class="nav-page-text">Referências</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./102-caracteriza.html" class="pagination-link" aria-label="Caracterização">
+        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Caracterização</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -877,4 +909,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/balima78/DataOpsMOOC/edit/main/900-summary.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/balima78/DataOpsMOOC/issues" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/balima78/DataOpsMOOC/edit/main/101-intro.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/balima78/DataOpsMOOC/issues" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>

@@ -1,0 +1,53 @@
+---
+title: "Avaliação final"
+---
+
+```{r, echo = FALSE, results='asis'}
+knitr::opts_chunk$set(echo = FALSE)
+
+# Uncomment to change widget colours:
+style_widgets(incorrect = "goldenrod", correct = "purple", highlight = "firebrick")
+```
+
+Nesta avaliação final do curso "DataOps basics", o aluno garante a aprovação se responder acertadamente a mais de 50% das questões.
+
+Responda a todas as perguntas:
+
+1. **Qual das opções descreve melhor o objetivo principal de DataOps?**
+
+```{r}
+#| echo: false
+q_final1 <- c(
+   "Centralizar todos os dados de uma empresa em um único local.",
+   answer = "Facilitar a automação e colaboração na análise de dados, garantindo reprodutibilidade.",
+   "Substituir os processos tradicionais de desenvolvimento de software.",
+   "Aumentar a velocidade de processamento dos dados."
+)
+```
+
+`r longmcq(q_final1)`
+
+2. **No Git, qual é o comando que devemos usar para enviarmos as alterações locais para o repositório remoto no GitLab?** `r fitb('push')`
+
+3. **Que ficheiro é criado pelo pacote `{renv}` para registar as versões dos pacotes utilizados num projeto, permitindo a reprodutibilidade do ambiente?** `r fitb('renv.lock')`
+
+4. **Qual das seguintes afirmações é verdadeira sobre o uso de *branches* no Git?**
+
+```{r}
+#| echo: false
+q_final4 <- c(
+   answer = "Um branch permite experimentar novas funcionalidades sem afetar o código principal.",
+   "Branches eliminam a necessidade de commits.",
+   "Um branch sempre precisa ser mergido automaticamente.",
+   "Branches removem a necessidade de gestão de versões."
+)
+```
+
+`r longmcq(q_final4)`
+
+5. **Qual a função R que devemos usar para iniciarmos a gestão dos pacotes com o `{renv}`?** `renv::` `r fitb('init()')`
+
+6. *TRUE or FALSE*? **O RStudio permite visualizar o histórico de *commits* e *merges* de um projeto integrado com o Git.** `r torf(TRUE)`
+
+7. *TRUE or FALSE*? **O ficheiro `renv.lock` permite restaurar um projeto em qualquer computador, mantendo as mesmas versões dos pacotes, mesmo se não estiverem disponíveis na biblioteca padrão do R.** `r torf(TRUE)`
+

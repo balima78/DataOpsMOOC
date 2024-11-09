@@ -1,0 +1,59 @@
+# Versões anteriores
+
+A gestão de versões com o Git depende dos *commit* que registam momentos no tempo para as alterações ao desenvolvimento do nosso código.
+
+Neste capítulo vamos listar *commits*, ver as alterações feitas em *commits* anteriores, voltar para um *commit* específico, criar um novo *branch* e fazer commits em novas alterações. 
+
+Para tudo isto, usaremos o Git integrado ao RStudio.
+
+## Histórico das alterações
+
+Podemos ter acesso à revisão das alterações através do RStudio.
+
+{{< video https://youtu.be/-bqGPc5zWgw >}}
+
+## Rever um *commit* anterior
+
+No terminal Git Bash, usamos o comando `git checkout <commit-id>`:
+
+{{< video https://youtu.be/Q3YEYsDvA7A >}}
+
+## Voltar ao futuro
+
+Podemos ainda ter a necessidade de ver um *commit* anterior e voltar ao ponto atual sem registar alterações.
+
+{{< video https://youtu.be/HX_IgYXmYtw >}}
+
+## Verificação de aprendizagem
+
+**Qual é a função principal de um *commit* no Git?**
+
+```{r}
+#| echo: false
+q_commit1 <- c(
+   answer = "Registrar um momento no tempo com as alterações feitas no desenvolvimento do código.",
+   "Desfazer todas as alterações feitas em um branch.",
+   "Criar um novo branch no repositório.",
+   "Verificar a compatibilidade entre duas versões do código."
+)
+```
+
+`r longmcq(q_commit1)`
+
+**Qual o comando que usamos no terminal Git Bash para rever um *commit* anterior?**
+
+```{r}
+#| echo: false
+q_commit2 <- c(
+   "git reset 'commit-id'",
+   answer = "git checkout 'commit-id'",
+   "git branch 'commit-id'",
+   "git commit 'commit-id'"
+)
+```
+
+`r longmcq(q_commit2)`
+
+## A seguir
+ 
+Agora até já sabemos viajar no tempo com os *commits*. No próximo capítulo vamos concluir o nosso projecto registando as versões dos pacotes que usamos.  
