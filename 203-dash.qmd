@@ -1,6 +1,6 @@
 # *Dashboard* Quarto
 
-Neste projecto temos como objectivo construir um *dashboard* para descrevermos o Índice de Preços da Habitação (IPC) a partir dos dados obtidos no portal do INE.
+Neste projeto temos como objectivo construir um *dashboard* para descrevermos o Índice de Preços da Habitação (IPC) a partir dos dados obtidos no portal do INE.
 
 Criar *dashboards* com Quarto oferece-nos muitas vantagens, especialmente quando trabalhamos com o R. Podemos combinar visualizações interactivas com um *layout* e *design* costumizável, facilitando o ajuste a diferentes dispositivos, como *mobile* e *desktop*. 
 
@@ -10,9 +10,9 @@ Outra vantagem é sua flexibilidade de publicação, que permite compartilhar os
 
 Criar um novo *branch* no Git é uma prática fundamental no controlo de versões que nos permite:
 
-+ Isolar funcionalidades: num *branch* podemos trabalhar numa nove funcionalidade corrigir *bugs* ou experimentar sem interferir com o código principal (geralmente o *branch main* ou *master*);
++ Isolar funcionalidades: num *branch* podemos trabalhar numa nova funcionalidade, corrigir *bugs*, ou experimentar sem interferirmos com o código principal (geralmente o *branch main* ou *master*);
 
-+ Facilitar a colaboração: Em equipa, cada desenvolvedor pode trabalhar em uma tarefa específica no seu próprio *branch*. Isso facilita o trabalho simultâneo, pois evita que uma pessoa sobrescreva o código de outra acidentalmente.
++ Facilitar a colaboração: em equipa, cada desenvolvedor pode trabalhar em uma tarefa específica no seu próprio *branch*. Isso facilita o trabalho simultâneo, pois evita que uma pessoa sobrescreva o código de outra, acidentalmente.
 
 + Histórico organizado: os *branches* ajudam a manter o histórico de *commits* mais organizado. Cada *branch* representa uma unidade de trabalho específica, o que facilita a revisão do histórico do projeto e ajuda a entender o desenvolvimento das funcionalidades.
 
@@ -38,7 +38,7 @@ Dividimos o nosso trabalho em *branches* de desenvolvimento que ao ficarem concl
 
 {{< video https://youtu.be/t5xOjJxYHmw >}}
 
-Quando damos por concluída esta parte do desenvolvimento, fazemos o *commit* dass alterações, o *push* para o GitLab e finalmente o *merge* para o *main branch*.
+Quando damos por concluída esta parte do desenvolvimento, fazemos o *commit* das alterações, o *push* para o GitLab e por fim o *merge* para o *main branch*.
 
 Finalmente, voltamos ao projecto no nosso pc local e fazemos o *pull* do *main branch* do GitLab:
 
@@ -78,4 +78,4 @@ q_branch2 <- c(
 
 ## A seguir
  
-Já temos o nosso *dashboard* (pelo menos a primeira versão) e já aprendemos a trabalhar com *branchs* e a fazer *merge* mas o Git permite-nos mais. No próximo capítulo poderemos aprofundar nas possibilidades do controlo de versões com o Git.  
+Já temos o nosso *dashboard* (pelo menos a primeira versão) e já aprendemos a trabalhar com *branchs* e a fazer *merge* mas o Git permite-nos mais. No próximo capítulo poderemos ver mais possibilidades do controlo de versões com o Git.

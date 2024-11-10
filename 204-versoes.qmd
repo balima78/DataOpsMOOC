@@ -1,8 +1,8 @@
 # Versões anteriores
 
-A gestão de versões com o Git depende dos *commit* que registam momentos no tempo para as alterações ao desenvolvimento do nosso código.
+A gestão de versões com o Git depende dos *commit* que registam momentos no tempo para as alterações, no desenvolvimento do nosso código.
 
-Neste capítulo vamos listar *commits*, ver as alterações feitas em *commits* anteriores, voltar para um *commit* específico, criar um novo *branch* e fazer commits em novas alterações. 
+Neste capítulo vamos listar *commits*, ver as alterações feitas em *commits* anteriores, voltar para um *commit* específico, criar um novo *branch* e fazer *commits* em novas alterações. 
 
 Para tudo isto, usaremos o Git integrado ao RStudio.
 
@@ -20,7 +20,7 @@ No terminal Git Bash, usamos o comando `git checkout <commit-id>`:
 
 ## Voltar ao futuro
 
-Podemos ainda ter a necessidade de ver um *commit* anterior e voltar ao ponto atual sem registar alterações.
+Podemos ainda ter a necessidade de ver um *commit* anterior e voltar ao ponto atual, sem registar alterações.
 
 {{< video https://youtu.be/HX_IgYXmYtw >}}
 

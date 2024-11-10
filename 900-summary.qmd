@@ -1,18 +1,18 @@
 # Conclusão
 
-Ao concluirmos o curso introdutório "DataOps basics," esperamos ter oferecido uma base que permita a implementação dos princípios fundamentais de DataOps em próprios projetos. 
+Ao concluirmos o curso introdutório **Princípios básicos de DataOps: um guia prático com R, Git e Quarto**, esperamos ter oferecido uma base que permita a implementação dos princípios fundamentais de *DataOps* em próximos projetos. 
 
-Começamos com uma definição simples de DataOps, sublinhando a sua importância no cenário atual de análise de dados: uma abordagem que permite uma gestão eficiente, automatizada e colaborativa do dados, facilitando a entrega rápida de *insights* confiáveis e reprodutíveis.
+Começámos com uma definição simples de *DataOps*, sublinhando a sua importância no cenário atual de análise de dados: uma abordagem que permite uma gestão eficiente, automatizada e colaborativa dos dados, facilitando a entrega rápida de *insights* confiáveis e reprodutíveis.
 
-Neste curso, apresentamos ferramentas essenciais para implementar uma abordagem de DataOps: R, RStudio, Quarto, Git e GitLab. Cada uma desempenha um papel crucial no ciclo de vida dos dados e no fluxo de trabalho da análise de dados. Com estes recursos, exploramos um caso prático com base no Índice de Preços de Habitação do Instituto Nacional de Estatística (INE), dando uma aplicação prática e real aos conceitos de DataOps.
+Neste curso, apresentámos ferramentas essenciais para implementar uma abordagem de *DataOps*: R, RStudio, Quarto, Git e GitLab. Cada uma desempenha um papel crucial no ciclo de vida dos dados e no fluxo de trabalho do cientista de dados. Com estes recursos, explorámos um caso prático com base no Índice de Preços de Habitação do INE, dando uma aplicação prática e real aos conceitos de *DataOps*.
 
-Ao longo do nosso processo, criamos um repositório no GitLab, que foi clonado localmente para o RStudio, estabelecendo o ponto central para o versionamento de nosso projeto. Durante o desenvolvimento do nosso *dashboard* em Quarto, realizamos *commits* das alterações no código, criamos novos *branches* para experimentar funcionalidades e melhorias, fizemos *push* das mudanças para o GitLab e concluímos *merge requests*, unindo o código modificado ao *branch* principal. Realizamos o *pull* das alterações aprovadas para o nosso ambiente local, garantindo que as versões estivessem sempre sincronizadas.
+Ao longo do nosso processo, criámos um repositório no GitLab, que foi clonado localmente com o RStudio, estabelecendo o ponto central para o versionamento de nosso projeto. Durante o desenvolvimento do nosso *dashboard* em Quarto, realizámos *commits* das alterações ao código, criámos novos *branches* para experimentar funcionalidades e melhorias, fizemos *push* das mudanças para o GitLab e concluímos com *merge requests*, unindo o código modificado ao *branch* principal. Ainda, fizemos o *pull* das alterações aprovadas para o nosso ambiente local, garantindo que as versões estivessem sempre sincronizadas.
 
 O histórico de *commits* e *merges* ficou sempre acessível no RStudio, oferecendo uma visão clara do progresso e permitindo o rastreamento das mudanças feitas ao longo do projeto. 
 
-Introduzimos também o uso do pacote `{renv}` para registrar as versões dos pacotes R utilizados, e que é essencial para garantirmos a reprodutibilidade e o controle de dependências do projeto, facilitando a manutenção e a execução futura do código, independentemente de atualizações nos pacotes.
+Introduzimos também o uso do pacote `{renv}` para registar as versões dos pacotes R utilizados, o que é essencial para garantirmos a reprodutibilidade e o controle de dependências do projeto, facilitando a manutenção e a execução futura do código, independentemente de eventuais atualizações dos pacotes.
 
-Concluímos, assim, com um exemplo completo, como aplicar DataOps num fluxo de trabalho de análise de dados. A prática com ferramentas de controlo de versão e gestão de pacotes cria uma base sólida para o desenvolvimento de análises robustas, facilitando tanto a colaboração em equipa quanto a evolução contínua dos projetos. 
+Concluímos, assim, com um exemplo completo, como aplicar *DataOps* num fluxo de trabalho de análise de dados. A prática com ferramentas de controlo de versão e gestão de pacotes cria uma base sólida para o desenvolvimento de análises robustas, facilitando tanto a colaboração em equipa quanto a evolução contínua dos projetos. 
 
 Quem quiser continuar a aprofundar o mundo do *DataOps*, encontrará no livro [Building Reproducible Analytical Pipelines with R](https://raps-with-r.dev/)[@br] uma fonte esclarecida e cheia do melhor conteúdo para auxiliar o trabalho a desenvolver por Cientistas de dados, Estatísticos ou Investigadores.
 

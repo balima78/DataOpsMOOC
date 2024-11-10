@@ -37,7 +37,7 @@ Git é uma ferramenta de controlo de versões que permite rastrear alterações 
     - Durante a instalação, siga as instruções para uma instalação padrão.
 
 5. Instalação do Quarto  
-Quarto é uma ferramenta para criar documentos reprodutíveis, relatórios dinâmicos e dashboards, a partir de código R. Iremos utilizá-lo para gerar o *dashboard* do nosso projetos de forma automatizada.
+Quarto é uma ferramenta para criar documentos reprodutíveis, relatórios dinâmicos e dashboards, a partir de código R. Iremos utilizá-lo para gerar o *dashboard* do nosso projeto de forma automatizada.
 
     - Link de Download: [Download Quarto](https://quarto.org/docs/get-started/)
     - Baixe a versão mais recente e siga as instruções para uma instalação padrão no seu sistema operacional.

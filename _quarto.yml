@@ -22,6 +22,7 @@ book:
   - 203-dash.qmd
   - 204-versoes.qmd
   - 205-renv.qmd
+  - 206-pub.qmd
   - 800-avaliacao.qmd
   - 900-summary.qmd
   - references.qmd

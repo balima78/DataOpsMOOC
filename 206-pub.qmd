@@ -1,0 +1,14 @@
+# Publicação
+
+Por fim (e como bónus), vamos tornar público o nosso *dashboard*. Usaremos o serviço [netlify](https://www.netlify.com/), para que, de uma forma simples, rápida e sem custos, possamos publicar o nosso *dashboard* na Internet.
+
+Antes de mais teremos de fazer uma pequena alteração ao nosso projecto:
+
+{{< video https://youtu.be/xT3WJh1_nYk >}}
+
+Agora, apenas temos de entrar no [netlify](https://www.netlify.com/), com a nossa conta do Gitlab e apontarmos para o nosso repositório:
+
+{{< video https://youtu.be/0fK__haOVxk >}}
+
+
+[IPH](https://iphine.netlify.app/)

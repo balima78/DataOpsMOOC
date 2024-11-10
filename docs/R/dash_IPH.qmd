@@ -10,6 +10,7 @@ theme: cosmo
 ---
 
 ```{r setup, include = FALSE}
+
 # importar dados de Q1
 q1 <- read.csv2("dados/preparados/iph_q1.csv")
 # passar a coluna 'periodo' a factor ordenado
@@ -34,7 +35,7 @@ q6 <- read.csv2("dados/preparados/iph_q6.csv")
 # passar a coluna 'periodo' a factor ordenado
 q6 <- q6 |> 
   dplyr::mutate(periodo = factor(periodo, levels = q1$periodo))
-  
+
 ```
 
 ## Row

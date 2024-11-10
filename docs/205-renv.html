@@ -30,7 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./800-avaliacao.html" rel="next">
+<link href="./206-pub.html" rel="next">
 <link href="./204-versoes.html" rel="prev">
 <link href="./images/coverDOB.jfif" rel="icon">
 <script src="site_libs/quarto-html/quarto.js"></script>
@@ -161,14 +161,20 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./206-pub.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Publicação</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./800-avaliacao.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Avaliação final</span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Avaliação final</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./900-summary.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Conclusão</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Conclusão</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -189,6 +195,7 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#renv" id="toc-renv" class="nav-link active" data-scroll-target="#renv"><span class="header-section-number">7.1</span> <code>{renv}</code></a></li>
   <li><a href="#verificação-de-aprendizagem" id="toc-verificação-de-aprendizagem" class="nav-link" data-scroll-target="#verificação-de-aprendizagem"><span class="header-section-number">7.2</span> Verificação de aprendizagem</a></li>
+  <li><a href="#a-seguir" id="toc-a-seguir" class="nav-link" data-scroll-target="#a-seguir"><span class="header-section-number">7.3</span> A seguir</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/balima78/DataOpsMOOC/edit/main/205-renv.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/balima78/DataOpsMOOC/issues" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -215,12 +222,14 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p>Após finalizarmos a primeira versão dos nosso <em>dashboard</em>, temos de garantir a reprodutibilidade do trabalho desenvolvido. Para isto, uma solução rápida e de baixo custo passa por registarmos as versões dos pacotes usados (bem como a versão do R que usamos no nosso desenvolvimento).</p>
-<p>O pacote <a href="https://rstudio.github.io/renv/articles/renv.html">{renv}</a> permite criar bibliotecas específicas por projeto (uma biblioteca é um conjunto de pacotes R instalados no nosso computador), registrando num ficheiro <code>renv.lock</code>, as versões exatas dos pacotes que foram usados. Este ficheiro vai possibilitar o restauro do ambiente usado noutro computador ou no futuro, isolando o projeto de outras bibliotecas instaladas. Assim conseguimos manter a consistência do ambiente de desenvolvimento ao longo do tempo, em especial permite que possamos trabalhar com versões diferentes de pacotes do R.</p>
-<p>Para economizar tempo, numa nova biblioteca criada coom o <a href="https://rstudio.github.io/renv/articles/renv.html">{renv}</a>}, os pacotes necessários são copiados da biblioteca principal do R (caso já estejam instalados na biblioteca padrão), em vez de serem baixados e reinstalados.</p>
+<p>O pacote <a href="https://rstudio.github.io/renv/articles/renv.html">{renv}</a> permite criar bibliotecas específicas por projeto (uma biblioteca é um conjunto de pacotes R instalados no nosso computador), registando, num ficheiro <code>renv.lock</code>, as versões exatas dos pacotes que foram usados. Este ficheiro vai possibilitar o restauro do ambiente usado noutro computador ou no futuro, isolando o projeto de outras bibliotecas instaladas. Assim conseguimos manter a consistência do ambiente de desenvolvimento ao longo do tempo, em especial permite que possamos trabalhar com versões diferentes de pacotes do R.</p>
+<p>Para economizar tempo, numa nova biblioteca criada com o <a href="https://rstudio.github.io/renv/articles/renv.html">{renv}</a>}, os pacotes necessários são copiados da biblioteca principal do R (caso já estejam instalados na biblioteca padrão), em vez de serem baixados e reinstalados.</p>
 <section id="renv" class="level2" data-number="7.1">
 <h2 data-number="7.1" class="anchored" data-anchor-id="renv"><span class="header-section-number">7.1</span> <code>{renv}</code></h2>
+<p><img src="images/renv.svg" class="img-fluid" style="width:20.0%"></p>
 <p>Devemos começar por instalar o pacote <code>{renv}</code>, tal como instalaríamos qualquer outro pacote no R:</p>
 <pre><code>install.packages("renv")</code></pre>
+<p>Depois podemos começar a tirar partido dele:</p>
 <div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/f_hK1XOOVZw" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
 <p>Mais algumas funções básicas do <code>{renv}</code>:</p>
 <div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/ZHFn_pYwPd0" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
@@ -228,13 +237,17 @@ ul.task-list li input[type="checkbox"] {
 <section id="verificação-de-aprendizagem" class="level2" data-number="7.2">
 <h2 data-number="7.2" class="anchored" data-anchor-id="verificação-de-aprendizagem"><span class="header-section-number">7.2</span> Verificação de aprendizagem</h2>
 <p><strong>Qual é uma das principais vantagens em usarmos o pacote <code>{renv}</code> para gerir bibliotecas em projetos R?</strong></p>
-<div id="radio_HYGWAEJESI" class="webex-radiogroup">
-<label><input type="radio" autocomplete="off" name="radio_HYGWAEJESI" value=""> <span>Permite compartilhar pacotes entre projetos sem criar novas bibliotecas.</span></label><label><input type="radio" autocomplete="off" name="radio_HYGWAEJESI" value="answer"> <span>Garante que o ambiente de desenvolvimento seja reprodutível, registrando as versões exatas dos pacotes usados.</span></label><label><input type="radio" autocomplete="off" name="radio_HYGWAEJESI" value=""> <span>Facilita o upload dos pacotes para o CRAN automaticamente.</span></label><label><input type="radio" autocomplete="off" name="radio_HYGWAEJESI" value=""> <span>Instala automaticamente pacotes desatualizados.</span></label>
+<div id="radio_RIUXXBBEJA" class="webex-radiogroup">
+<label><input type="radio" autocomplete="off" name="radio_RIUXXBBEJA" value=""> <span>Permite compartilhar pacotes entre projetos sem criar novas bibliotecas.</span></label><label><input type="radio" autocomplete="off" name="radio_RIUXXBBEJA" value="answer"> <span>Garante que o ambiente de desenvolvimento seja reprodutível, registrando as versões exatas dos pacotes usados.</span></label><label><input type="radio" autocomplete="off" name="radio_RIUXXBBEJA" value=""> <span>Facilita o upload dos pacotes para o CRAN automaticamente.</span></label><label><input type="radio" autocomplete="off" name="radio_RIUXXBBEJA" value=""> <span>Instala automaticamente pacotes desatualizados.</span></label>
 </div>
 <p><strong>Como o <code>{renv}</code> economiza tempo ao criar uma nova biblioteca específica para um projeto??</strong></p>
-<div id="radio_BIJVOCYMFH" class="webex-radiogroup">
-<label><input type="radio" autocomplete="off" name="radio_BIJVOCYMFH" value=""> <span>Baixando automaticamente a versão mais recente de cada pacote.</span></label><label><input type="radio" autocomplete="off" name="radio_BIJVOCYMFH" value=""> <span>Utilizando pacotes de uma biblioteca online para agilizar o processo.</span></label><label><input type="radio" autocomplete="off" name="radio_BIJVOCYMFH" value=""> <span>Instalando pacotes em uma versão de teste para reduzir erros.</span></label><label><input type="radio" autocomplete="off" name="radio_BIJVOCYMFH" value="answer"> <span>Copiando pacotes da biblioteca padrão do R se já estiverem instalados, em vez de baixá-los novamente.</span></label>
+<div id="radio_KOHGWACHMV" class="webex-radiogroup">
+<label><input type="radio" autocomplete="off" name="radio_KOHGWACHMV" value=""> <span>Baixando automaticamente a versão mais recente de cada pacote.</span></label><label><input type="radio" autocomplete="off" name="radio_KOHGWACHMV" value=""> <span>Utilizando pacotes de uma biblioteca online para agilizar o processo.</span></label><label><input type="radio" autocomplete="off" name="radio_KOHGWACHMV" value=""> <span>Instalando pacotes em uma versão de teste para reduzir erros.</span></label><label><input type="radio" autocomplete="off" name="radio_KOHGWACHMV" value="answer"> <span>Copiando pacotes da biblioteca padrão do R se já estiverem instalados, em vez de baixá-los novamente.</span></label>
 </div>
+</section>
+<section id="a-seguir" class="level2" data-number="7.3">
+<h2 data-number="7.3" class="anchored" data-anchor-id="a-seguir"><span class="header-section-number">7.3</span> A seguir</h2>
+<p>Apenas nos resta publicar o nosso produto final. No próximo capítulo, vamos disponibilizar, publicamente, o nosso <em>dashboard</em>, duma forma simples e gratuita.</p>
 
 
 </section>
@@ -862,8 +875,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./800-avaliacao.html" class="pagination-link" aria-label="Avaliação final">
-        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Avaliação final</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./206-pub.html" class="pagination-link" aria-label="Publicação">
+        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Publicação</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

@@ -9,7 +9,7 @@ knitr::opts_chunk$set(echo = FALSE)
 style_widgets(incorrect = "goldenrod", correct = "purple", highlight = "firebrick")
 ```
 
-Nesta avaliação final do curso "DataOps basics", o aluno garante a aprovação se responder acertadamente a mais de 50% das questões.
+Nesta avaliação final do curso **Princípios básicos de DataOps: um guia prático com R, Git e Quarto**, os participantes garantem a aprovação se responderem acertadamente a mais de 50% das questões.
 
 Responda a todas as perguntas:
 
@@ -31,7 +31,7 @@ q_final1 <- c(
 
 3. **Que ficheiro é criado pelo pacote `{renv}` para registar as versões dos pacotes utilizados num projeto, permitindo a reprodutibilidade do ambiente?** `r fitb('renv.lock')`
 
-4. **Qual das seguintes afirmações é verdadeira sobre o uso de *branches* no Git?**
+4. **Qual das seguintes afirmações é a que melhor descreve o uso de *branches* no Git?**
 
 ```{r}
 #| echo: false
@@ -45,9 +45,10 @@ q_final4 <- c(
 
 `r longmcq(q_final4)`
 
-5. **Qual a função R que devemos usar para iniciarmos a gestão dos pacotes com o `{renv}`?** `renv::` `r fitb('init()')`
+5. **Qual a função R que devemos usar para iniciarmos a gestão dos pacotes com o `{renv}`?**  
+`renv::` `r fitb('init()')`
 
-6. *TRUE or FALSE*? **O RStudio permite visualizar o histórico de *commits* e *merges* de um projeto integrado com o Git.** `r torf(TRUE)`
+6. *TRUE or FALSE*? **No RStudio podemos visualizar o histórico de *commits* e *merges* de um projeto integrado com o Git.** `r torf(TRUE)`
 
 7. *TRUE or FALSE*? **O ficheiro `renv.lock` permite restaurar um projeto em qualquer computador, mantendo as mesmas versões dos pacotes, mesmo se não estiverem disponíveis na biblioteca padrão do R.** `r torf(TRUE)`
 

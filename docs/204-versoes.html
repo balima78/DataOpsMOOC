@@ -161,14 +161,20 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./206-pub.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Publicação</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./800-avaliacao.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Avaliação final</span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Avaliação final</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./900-summary.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Conclusão</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Conclusão</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -217,8 +223,8 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>A gestão de versões com o Git depende dos <em>commit</em> que registam momentos no tempo para as alterações ao desenvolvimento do nosso código.</p>
-<p>Neste capítulo vamos listar <em>commits</em>, ver as alterações feitas em <em>commits</em> anteriores, voltar para um <em>commit</em> específico, criar um novo <em>branch</em> e fazer commits em novas alterações.</p>
+<p>A gestão de versões com o Git depende dos <em>commit</em> que registam momentos no tempo para as alterações, no desenvolvimento do nosso código.</p>
+<p>Neste capítulo vamos listar <em>commits</em>, ver as alterações feitas em <em>commits</em> anteriores, voltar para um <em>commit</em> específico, criar um novo <em>branch</em> e fazer <em>commits</em> em novas alterações.</p>
 <p>Para tudo isto, usaremos o Git integrado ao RStudio.</p>
 <section id="histórico-das-alterações" class="level2" data-number="6.1">
 <h2 data-number="6.1" class="anchored" data-anchor-id="histórico-das-alterações"><span class="header-section-number">6.1</span> Histórico das alterações</h2>
@@ -232,18 +238,18 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="voltar-ao-futuro" class="level2" data-number="6.3">
 <h2 data-number="6.3" class="anchored" data-anchor-id="voltar-ao-futuro"><span class="header-section-number">6.3</span> Voltar ao futuro</h2>
-<p>Podemos ainda ter a necessidade de ver um <em>commit</em> anterior e voltar ao ponto atual sem registar alterações.</p>
+<p>Podemos ainda ter a necessidade de ver um <em>commit</em> anterior e voltar ao ponto atual, sem registar alterações.</p>
 <div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/HX_IgYXmYtw" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
 </section>
 <section id="verificação-de-aprendizagem" class="level2" data-number="6.4">
 <h2 data-number="6.4" class="anchored" data-anchor-id="verificação-de-aprendizagem"><span class="header-section-number">6.4</span> Verificação de aprendizagem</h2>
 <p><strong>Qual é a função principal de um <em>commit</em> no Git?</strong></p>
-<div id="radio_OLTXQROGEK" class="webex-radiogroup">
-<label><input type="radio" autocomplete="off" name="radio_OLTXQROGEK" value="answer"> <span>Registrar um momento no tempo com as alterações feitas no desenvolvimento do código.</span></label><label><input type="radio" autocomplete="off" name="radio_OLTXQROGEK" value=""> <span>Desfazer todas as alterações feitas em um branch.</span></label><label><input type="radio" autocomplete="off" name="radio_OLTXQROGEK" value=""> <span>Criar um novo branch no repositório.</span></label><label><input type="radio" autocomplete="off" name="radio_OLTXQROGEK" value=""> <span>Verificar a compatibilidade entre duas versões do código.</span></label>
+<div id="radio_LWXEDBEJOD" class="webex-radiogroup">
+<label><input type="radio" autocomplete="off" name="radio_LWXEDBEJOD" value="answer"> <span>Registrar um momento no tempo com as alterações feitas no desenvolvimento do código.</span></label><label><input type="radio" autocomplete="off" name="radio_LWXEDBEJOD" value=""> <span>Desfazer todas as alterações feitas em um branch.</span></label><label><input type="radio" autocomplete="off" name="radio_LWXEDBEJOD" value=""> <span>Criar um novo branch no repositório.</span></label><label><input type="radio" autocomplete="off" name="radio_LWXEDBEJOD" value=""> <span>Verificar a compatibilidade entre duas versões do código.</span></label>
 </div>
 <p><strong>Qual o comando que usamos no terminal Git Bash para rever um <em>commit</em> anterior?</strong></p>
-<div id="radio_RSWTSAEABM" class="webex-radiogroup">
-<label><input type="radio" autocomplete="off" name="radio_RSWTSAEABM" value=""> <span>git reset 'commit-id'</span></label><label><input type="radio" autocomplete="off" name="radio_RSWTSAEABM" value="answer"> <span>git checkout 'commit-id'</span></label><label><input type="radio" autocomplete="off" name="radio_RSWTSAEABM" value=""> <span>git branch 'commit-id'</span></label><label><input type="radio" autocomplete="off" name="radio_RSWTSAEABM" value=""> <span>git commit 'commit-id'</span></label>
+<div id="radio_CQWEKMXWRG" class="webex-radiogroup">
+<label><input type="radio" autocomplete="off" name="radio_CQWEKMXWRG" value=""> <span>git reset 'commit-id'</span></label><label><input type="radio" autocomplete="off" name="radio_CQWEKMXWRG" value="answer"> <span>git checkout 'commit-id'</span></label><label><input type="radio" autocomplete="off" name="radio_CQWEKMXWRG" value=""> <span>git branch 'commit-id'</span></label><label><input type="radio" autocomplete="off" name="radio_CQWEKMXWRG" value=""> <span>git commit 'commit-id'</span></label>
 </div>
 </section>
 <section id="a-seguir" class="level2" data-number="6.5">

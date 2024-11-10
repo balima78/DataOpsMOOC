@@ -84,7 +84,7 @@
     "href": "201-instal.html#software",
     "title": "3  Instalação",
     "section": "",
-    "text": "Instalação do R\nR é uma linguagem de programação focada em análise estatística e científica de dados. Vamos utilizá-la para construir scripts e automatizar processos em DataOps.\n\nLink de Download: Download R\nSelecione o seu sistema operacional (Windows, macOS ou Linux) e baixe a versão mais recente do R.\nSiga as instruções do instalador e opte pela instalação padrão.\n\nInstalação do Rtools (para Windows)\nSe for utilizador do Windows, precisa instalar o Rtools, um conjunto de ferramentas necessárias para compilar pacotes do R.\n\nLink de Download: Download Rtools\nFaça o download da versão compatível com a sua versão do R. Por exemplo, para o R-4.4.1 deverá ser instalado o RTools 4.4\nInstale seguindo as configurações padrão e certifique-se de marcar a opção para adicionar Rtools ao caminho do sistema (PATH).\n\nInstalação do RStudio\nRStudio é um ambiente de desenvolvimento integrado (IDE) que facilita o trabalho com R, Git e Quarto, proporcionando uma interface amigável para escrever e executar código.\n\nLink de Download: Download RStudio\nBaixe a versão mais recente para o seu sistema operacional.\nExecute o instalador e siga as instruções para uma instalação padrão.\n\nInstalação do Git\nGit é uma ferramenta de controlo de versões que permite rastrear alterações ao código, colaborar com outros usuários e gerir projetos de forma eficiente. Será fundamental para o gestão dos nossos projetos em DataOps.\n\nLink de Download: Download Git\nEscolha o instalador apropriado para o seu sistema operacional (Windows, macOS ou Linux).\nDurante a instalação, siga as instruções para uma instalação padrão.\n\nInstalação do Quarto\nQuarto é uma ferramenta para criar documentos reprodutíveis, relatórios dinâmicos e dashboards, a partir de código R. Iremos utilizá-lo para gerar o dashboard do nosso projetos de forma automatizada.\n\nLink de Download: Download Quarto\nBaixe a versão mais recente e siga as instruções para uma instalação padrão no seu sistema operacional.",
+    "text": "Instalação do R\nR é uma linguagem de programação focada em análise estatística e científica de dados. Vamos utilizá-la para construir scripts e automatizar processos em DataOps.\n\nLink de Download: Download R\nSelecione o seu sistema operacional (Windows, macOS ou Linux) e baixe a versão mais recente do R.\nSiga as instruções do instalador e opte pela instalação padrão.\n\nInstalação do Rtools (para Windows)\nSe for utilizador do Windows, precisa instalar o Rtools, um conjunto de ferramentas necessárias para compilar pacotes do R.\n\nLink de Download: Download Rtools\nFaça o download da versão compatível com a sua versão do R. Por exemplo, para o R-4.4.1 deverá ser instalado o RTools 4.4\nInstale seguindo as configurações padrão e certifique-se de marcar a opção para adicionar Rtools ao caminho do sistema (PATH).\n\nInstalação do RStudio\nRStudio é um ambiente de desenvolvimento integrado (IDE) que facilita o trabalho com R, Git e Quarto, proporcionando uma interface amigável para escrever e executar código.\n\nLink de Download: Download RStudio\nBaixe a versão mais recente para o seu sistema operacional.\nExecute o instalador e siga as instruções para uma instalação padrão.\n\nInstalação do Git\nGit é uma ferramenta de controlo de versões que permite rastrear alterações ao código, colaborar com outros usuários e gerir projetos de forma eficiente. Será fundamental para o gestão dos nossos projetos em DataOps.\n\nLink de Download: Download Git\nEscolha o instalador apropriado para o seu sistema operacional (Windows, macOS ou Linux).\nDurante a instalação, siga as instruções para uma instalação padrão.\n\nInstalação do Quarto\nQuarto é uma ferramenta para criar documentos reprodutíveis, relatórios dinâmicos e dashboards, a partir de código R. Iremos utilizá-lo para gerar o dashboard do nosso projeto de forma automatizada.\n\nLink de Download: Download Quarto\nBaixe a versão mais recente e siga as instruções para uma instalação padrão no seu sistema operacional.",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Instalação</span>"
     ]
@@ -134,7 +134,7 @@
     "href": "202-materia.html",
     "title": "4  Preparar os dados",
     "section": "",
-    "text": "4.1 Índice de Preços de Habitação\nNeste curso, utilizaremos dados reais para construir o nosso pipeline de DataOps. Os dados que usaremos são fornecidos pelo Instituto Nacional de Estatística (INE) e referem-se ao Índice de Preços de Habitação. Esses dados monitorizam a variação dos preços de venda de imóveis ao longo do tempo em diferentes regiões e oferecem insights valiosos sobre o mercado imobiliário.\nInfelizmente, os dados são disponibilizados num ficheiro Excel e não estão num formato adequado para serem analisados com o R.\nAssim, as nossas tarefas serão:",
+    "text": "4.1 Índice de Preços de Habitação\nNeste curso, utilizaremos dados reais para construir o nosso pipeline em DataOps. Os dados que usaremos são fornecidos pelo Instituto Nacional de Estatística (INE) e referem-se ao Índice de Preços de Habitação. Estes monitorizam a variação dos preços de venda de imóveis ao longo do tempo em diferentes regiões e oferecem insights valiosos sobre o mercado imobiliário.\nInfelizmente, os dados são disponibilizados num ficheiro Excel e não estão num formato adequado para serem analisados com o R.\nAssim, as nossas tarefas serão:",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Preparar os dados</span>"
     ]
@@ -154,7 +154,7 @@
     "href": "202-materia.html#criar-repositório",
     "title": "4  Preparar os dados",
     "section": "4.2 Criar repositório",
-    "text": "4.2 Criar repositório\nAgora que já temos uma ideia do que vamos fazer, podemos criar o nosso primeiro repositório no GitLab.",
+    "text": "4.2 Criar repositório\nAgora que já temos uma ideia do que vamos fazer, podemos criar o nosso primeiro repositório no GitLab.\n\nRepositório no GitLab",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Preparar os dados</span>"
     ]
@@ -184,7 +184,7 @@
     "href": "202-materia.html#registar-alterações",
     "title": "4  Preparar os dados",
     "section": "4.5 Registar alterações",
-    "text": "4.5 Registar alterações\nConcluída a preparação dos dados registamos as alterações com o Git, ignorando o ficheiro com os dados originais.",
+    "text": "4.5 Registar alterações\nConcluída a preparação dos dados, registamos as alterações com o Git, ignorando o ficheiro com os dados originais.",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Preparar os dados</span>"
     ]
@@ -224,7 +224,7 @@
     "href": "203-dash.html#um-novo-branch",
     "title": "5  Dashboard Quarto",
     "section": "",
-    "text": "Isolar funcionalidades: num branch podemos trabalhar numa nove funcionalidade corrigir bugs ou experimentar sem interferir com o código principal (geralmente o branch main ou master);\nFacilitar a colaboração: Em equipa, cada desenvolvedor pode trabalhar em uma tarefa específica no seu próprio branch. Isso facilita o trabalho simultâneo, pois evita que uma pessoa sobrescreva o código de outra acidentalmente.\nHistórico organizado: os branches ajudam a manter o histórico de commits mais organizado. Cada branch representa uma unidade de trabalho específica, o que facilita a revisão do histórico do projeto e ajuda a entender o desenvolvimento das funcionalidades.\nFacilidade em reverter e testar: como as alterações ficam num branch separado, podemos testar e reverter mas facilmente o nosso código, se houver erros.",
+    "text": "Isolar funcionalidades: num branch podemos trabalhar numa nova funcionalidade, corrigir bugs, ou experimentar sem interferirmos com o código principal (geralmente o branch main ou master);\nFacilitar a colaboração: em equipa, cada desenvolvedor pode trabalhar em uma tarefa específica no seu próprio branch. Isso facilita o trabalho simultâneo, pois evita que uma pessoa sobrescreva o código de outra, acidentalmente.\nHistórico organizado: os branches ajudam a manter o histórico de commits mais organizado. Cada branch representa uma unidade de trabalho específica, o que facilita a revisão do histórico do projeto e ajuda a entender o desenvolvimento das funcionalidades.\nFacilidade em reverter e testar: como as alterações ficam num branch separado, podemos testar e reverter mas facilmente o nosso código, se houver erros.",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>*Dashboard* Quarto</span>"
     ]
@@ -254,7 +254,7 @@
     "href": "203-dash.html#branch-de-desenvolvimento",
     "title": "5  Dashboard Quarto",
     "section": "5.4 branch de desenvolvimento",
-    "text": "5.4 branch de desenvolvimento\nDividimos o nosso trabalho em branches de desenvolvimento que ao ficarem concluídos são mergidos para o main branch, no GitLab.\n\nQuando damos por concluída esta parte do desenvolvimento, fazemos o commit dass alterações, o push para o GitLab e finalmente o merge para o main branch.\nFinalmente, voltamos ao projecto no nosso pc local e fazemos o pull do main branch do GitLab:\n\nscript Quarto",
+    "text": "5.4 branch de desenvolvimento\nDividimos o nosso trabalho em branches de desenvolvimento que ao ficarem concluídos são mergidos para o main branch, no GitLab.\n\nQuando damos por concluída esta parte do desenvolvimento, fazemos o commit das alterações, o push para o GitLab e por fim o merge para o main branch.\nFinalmente, voltamos ao projecto no nosso pc local e fazemos o pull do main branch do GitLab:\n\nscript Quarto",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>*Dashboard* Quarto</span>"
     ]
@@ -274,7 +274,7 @@
     "href": "203-dash.html#a-seguir",
     "title": "5  Dashboard Quarto",
     "section": "5.6 A seguir",
-    "text": "5.6 A seguir\nJá temos o nosso dashboard (pelo menos a primeira versão) e já aprendemos a trabalhar com branchs e a fazer merge mas o Git permite-nos mais. No próximo capítulo poderemos aprofundar nas possibilidades do controlo de versões com o Git.",
+    "text": "5.6 A seguir\nJá temos o nosso dashboard (pelo menos a primeira versão) e já aprendemos a trabalhar com branchs e a fazer merge mas o Git permite-nos mais. No próximo capítulo poderemos ver mais possibilidades do controlo de versões com o Git.",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>*Dashboard* Quarto</span>"
     ]
@@ -304,7 +304,7 @@
     "href": "204-versoes.html#voltar-ao-futuro",
     "title": "6  Versões anteriores",
     "section": "6.3 Voltar ao futuro",
-    "text": "6.3 Voltar ao futuro\nPodemos ainda ter a necessidade de ver um commit anterior e voltar ao ponto atual sem registar alterações.",
+    "text": "6.3 Voltar ao futuro\nPodemos ainda ter a necessidade de ver um commit anterior e voltar ao ponto atual, sem registar alterações.",
     "crumbs": [
       "<span class='chapter-number'>6</span>  <span class='chapter-title'>Versões anteriores</span>"
     ]
@@ -334,7 +334,7 @@
     "href": "205-renv.html",
     "title": "7  Biblioteca de projeto",
     "section": "",
-    "text": "7.1 {renv}\nDevemos começar por instalar o pacote {renv}, tal como instalaríamos qualquer outro pacote no R:\nMais algumas funções básicas do {renv}:",
+    "text": "7.1 {renv}\nDevemos começar por instalar o pacote {renv}, tal como instalaríamos qualquer outro pacote no R:\nDepois podemos começar a tirar partido dele:\nMais algumas funções básicas do {renv}:",
     "crumbs": [
       "<span class='chapter-number'>7</span>  <span class='chapter-title'>Biblioteca de projeto</span>"
     ]
@@ -360,23 +360,43 @@
     ]
   },
   {
+    "objectID": "205-renv.html#a-seguir",
+    "href": "205-renv.html#a-seguir",
+    "title": "7  Biblioteca de projeto",
+    "section": "7.3 A seguir",
+    "text": "7.3 A seguir\nApenas nos resta publicar o nosso produto final. No próximo capítulo, vamos disponibilizar, publicamente, o nosso dashboard, duma forma simples e gratuita.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Biblioteca de projeto</span>"
+    ]
+  },
+  {
+    "objectID": "206-pub.html",
+    "href": "206-pub.html",
+    "title": "8  Publicação",
+    "section": "",
+    "text": "Por fim (e como bónus), vamos tornar público o nosso dashboard. Usaremos o serviço netlify, para que, de uma forma simples, rápida e sem custos, possamos publicar o nosso dashboard na Internet.\nAntes de mais teremos de fazer uma pequena alteração ao nosso projecto:\n\nAgora, apenas temos de entrar no netlify, com a nossa conta do Gitlab e apontarmos para o nosso repositório:\n\nIPH",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Publicação</span>"
+    ]
+  },
+  {
     "objectID": "800-avaliacao.html",
     "href": "800-avaliacao.html",
-    "title": "8  Avaliação final",
+    "title": "9  Avaliação final",
     "section": "",
-    "text": "Nesta avaliação final do curso “DataOps basics”, o aluno garante a aprovação se responder acertadamente a mais de 50% das questões.\nResponda a todas as perguntas:\n\nQual das opções descreve melhor o objetivo principal de DataOps?\n\n\n Centralizar todos os dados de uma empresa em um único local. Facilitar a automação e colaboração na análise de dados, garantindo reprodutibilidade. Substituir os processos tradicionais de desenvolvimento de software. Aumentar a velocidade de processamento dos dados.\n\n\nNo Git, qual é o comando que devemos usar para enviarmos as alterações locais para o repositório remoto no GitLab? \nQue ficheiro é criado pelo pacote {renv} para registar as versões dos pacotes utilizados num projeto, permitindo a reprodutibilidade do ambiente? \nQual das seguintes afirmações é verdadeira sobre o uso de branches no Git?\n\n\n Um branch permite experimentar novas funcionalidades sem afetar o código principal. Branches eliminam a necessidade de commits. Um branch sempre precisa ser mergido automaticamente. Branches removem a necessidade de gestão de versões.\n\n\nQual a função R que devemos usar para iniciarmos a gestão dos pacotes com o {renv}? renv:: \nTRUE or FALSE? O RStudio permite visualizar o histórico de commits e merges de um projeto integrado com o Git. TRUEFALSE\nTRUE or FALSE? O ficheiro renv.lock permite restaurar um projeto em qualquer computador, mantendo as mesmas versões dos pacotes, mesmo se não estiverem disponíveis na biblioteca padrão do R. TRUEFALSE",
+    "text": "Nesta avaliação final do curso Princípios básicos de DataOps: um guia prático com R, Git e Quarto, os participantes garantem a aprovação se responderem acertadamente a mais de 50% das questões.\nResponda a todas as perguntas:\n\nQual das opções descreve melhor o objetivo principal de DataOps?\n\n\n Centralizar todos os dados de uma empresa em um único local. Facilitar a automação e colaboração na análise de dados, garantindo reprodutibilidade. Substituir os processos tradicionais de desenvolvimento de software. Aumentar a velocidade de processamento dos dados.\n\n\nNo Git, qual é o comando que devemos usar para enviarmos as alterações locais para o repositório remoto no GitLab? \nQue ficheiro é criado pelo pacote {renv} para registar as versões dos pacotes utilizados num projeto, permitindo a reprodutibilidade do ambiente? \nQual das seguintes afirmações é a que melhor descreve o uso de branches no Git?\n\n\n Um branch permite experimentar novas funcionalidades sem afetar o código principal. Branches eliminam a necessidade de commits. Um branch sempre precisa ser mergido automaticamente. Branches removem a necessidade de gestão de versões.\n\n\nQual a função R que devemos usar para iniciarmos a gestão dos pacotes com o {renv}?\nrenv:: \nTRUE or FALSE? No RStudio podemos visualizar o histórico de commits e merges de um projeto integrado com o Git. TRUEFALSE\nTRUE or FALSE? O ficheiro renv.lock permite restaurar um projeto em qualquer computador, mantendo as mesmas versões dos pacotes, mesmo se não estiverem disponíveis na biblioteca padrão do R. TRUEFALSE",
     "crumbs": [
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Avaliação final</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Avaliação final</span>"
     ]
   },
   {
     "objectID": "900-summary.html",
     "href": "900-summary.html",
-    "title": "9  Conclusão",
+    "title": "10  Conclusão",
     "section": "",
-    "text": "Ao concluirmos o curso introdutório “DataOps basics,” esperamos ter oferecido uma base que permita a implementação dos princípios fundamentais de DataOps em próprios projetos.\nComeçamos com uma definição simples de DataOps, sublinhando a sua importância no cenário atual de análise de dados: uma abordagem que permite uma gestão eficiente, automatizada e colaborativa do dados, facilitando a entrega rápida de insights confiáveis e reprodutíveis.\nNeste curso, apresentamos ferramentas essenciais para implementar uma abordagem de DataOps: R, RStudio, Quarto, Git e GitLab. Cada uma desempenha um papel crucial no ciclo de vida dos dados e no fluxo de trabalho da análise de dados. Com estes recursos, exploramos um caso prático com base no Índice de Preços de Habitação do Instituto Nacional de Estatística (INE), dando uma aplicação prática e real aos conceitos de DataOps.\nAo longo do nosso processo, criamos um repositório no GitLab, que foi clonado localmente para o RStudio, estabelecendo o ponto central para o versionamento de nosso projeto. Durante o desenvolvimento do nosso dashboard em Quarto, realizamos commits das alterações no código, criamos novos branches para experimentar funcionalidades e melhorias, fizemos push das mudanças para o GitLab e concluímos merge requests, unindo o código modificado ao branch principal. Realizamos o pull das alterações aprovadas para o nosso ambiente local, garantindo que as versões estivessem sempre sincronizadas.\nO histórico de commits e merges ficou sempre acessível no RStudio, oferecendo uma visão clara do progresso e permitindo o rastreamento das mudanças feitas ao longo do projeto.\nIntroduzimos também o uso do pacote {renv} para registrar as versões dos pacotes R utilizados, e que é essencial para garantirmos a reprodutibilidade e o controle de dependências do projeto, facilitando a manutenção e a execução futura do código, independentemente de atualizações nos pacotes.\nConcluímos, assim, com um exemplo completo, como aplicar DataOps num fluxo de trabalho de análise de dados. A prática com ferramentas de controlo de versão e gestão de pacotes cria uma base sólida para o desenvolvimento de análises robustas, facilitando tanto a colaboração em equipa quanto a evolução contínua dos projetos.\nQuem quiser continuar a aprofundar o mundo do DataOps, encontrará no livro Building Reproducible Analytical Pipelines with R(Rodrigues 2023) uma fonte esclarecida e cheia do melhor conteúdo para auxiliar o trabalho a desenvolver por Cientistas de dados, Estatísticos ou Investigadores.\nEsperamos que este curso tenha sido um ponto de partida útil e inspirador na sua jornada em DataOps!\n\n\n\n\nRodrigues, Bruno. 2023. “Building Reproducible Analytical Pipelines with r.” Independently published. 2023. https://www.amazon.com/dp/B0C87H6MGF/.",
+    "text": "Ao concluirmos o curso introdutório Princípios básicos de DataOps: um guia prático com R, Git e Quarto, esperamos ter oferecido uma base que permita a implementação dos princípios fundamentais de DataOps em próximos projetos.\nComeçámos com uma definição simples de DataOps, sublinhando a sua importância no cenário atual de análise de dados: uma abordagem que permite uma gestão eficiente, automatizada e colaborativa dos dados, facilitando a entrega rápida de insights confiáveis e reprodutíveis.\nNeste curso, apresentámos ferramentas essenciais para implementar uma abordagem de DataOps: R, RStudio, Quarto, Git e GitLab. Cada uma desempenha um papel crucial no ciclo de vida dos dados e no fluxo de trabalho do cientista de dados. Com estes recursos, explorámos um caso prático com base no Índice de Preços de Habitação do INE, dando uma aplicação prática e real aos conceitos de DataOps.\nAo longo do nosso processo, criámos um repositório no GitLab, que foi clonado localmente com o RStudio, estabelecendo o ponto central para o versionamento de nosso projeto. Durante o desenvolvimento do nosso dashboard em Quarto, realizámos commits das alterações ao código, criámos novos branches para experimentar funcionalidades e melhorias, fizemos push das mudanças para o GitLab e concluímos com merge requests, unindo o código modificado ao branch principal. Ainda, fizemos o pull das alterações aprovadas para o nosso ambiente local, garantindo que as versões estivessem sempre sincronizadas.\nO histórico de commits e merges ficou sempre acessível no RStudio, oferecendo uma visão clara do progresso e permitindo o rastreamento das mudanças feitas ao longo do projeto.\nIntroduzimos também o uso do pacote {renv} para registar as versões dos pacotes R utilizados, o que é essencial para garantirmos a reprodutibilidade e o controle de dependências do projeto, facilitando a manutenção e a execução futura do código, independentemente de eventuais atualizações dos pacotes.\nConcluímos, assim, com um exemplo completo, como aplicar DataOps num fluxo de trabalho de análise de dados. A prática com ferramentas de controlo de versão e gestão de pacotes cria uma base sólida para o desenvolvimento de análises robustas, facilitando tanto a colaboração em equipa quanto a evolução contínua dos projetos.\nQuem quiser continuar a aprofundar o mundo do DataOps, encontrará no livro Building Reproducible Analytical Pipelines with R(Rodrigues 2023) uma fonte esclarecida e cheia do melhor conteúdo para auxiliar o trabalho a desenvolver por Cientistas de dados, Estatísticos ou Investigadores.\nEsperamos que este curso tenha sido um ponto de partida útil e inspirador na sua jornada em DataOps!\n\n\n\n\nRodrigues, Bruno. 2023. “Building Reproducible Analytical Pipelines with r.” Independently published. 2023. https://www.amazon.com/dp/B0C87H6MGF/.",
     "crumbs": [
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Conclusão</span>"
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Conclusão</span>"
     ]
   },
   {
