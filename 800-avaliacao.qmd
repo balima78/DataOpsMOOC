@@ -9,11 +9,11 @@ knitr::opts_chunk$set(echo = FALSE)
 style_widgets(incorrect = "goldenrod", correct = "purple", highlight = "firebrick")
 ```
 
-Nesta avaliação final do curso **Princípios básicos de DataOps: um guia prático com R, Git e Quarto**, os participantes garantem a aprovação se responderem acertadamente a mais de 50% das questões.
+Nesta avaliação final do curso **Princípios básicos de _DataOps_: um guia prático com R, Git e Quarto**, os participantes garantem a aprovação se responderem acertadamente a mais de 50% das questões.
 
 Responda a todas as perguntas:
 
-1. **Qual das opções descreve melhor o objetivo principal de DataOps?**
+1. **Qual das opções descreve melhor o objetivo principal de _DataOps_?**
 
 ```{r}
 #| echo: false
@@ -51,4 +51,32 @@ q_final4 <- c(
 6. *TRUE or FALSE*? **No RStudio podemos visualizar o histórico de *commits* e *merges* de um projeto integrado com o Git.** `r torf(TRUE)`
 
 7. *TRUE or FALSE*? **O ficheiro `renv.lock` permite restaurar um projeto em qualquer computador, mantendo as mesmas versões dos pacotes, mesmo se não estiverem disponíveis na biblioteca padrão do R.** `r torf(TRUE)`
+
+8. **Qual é o nível mais básico da hierarquia nas necessidades de código em Ciência de Dados?**
+
+```{r}
+#| echo: false
+q_final5 <- c(
+   "Entender (Understand)",
+   "Editar (Edit)",
+   answer = "Encontrar (Find)",
+   "Executar (Run)"
+)
+```
+
+`r longmcq(q_final5)`
+
+9. **Qual a prática recomendada para facilitar o nível 'Encontrar' da hierarquia nas necessidades?**
+
+```{r}
+#| echo: false
+q_final6 <- c(
+   "Usar o {renv} para gerenciar dependências.",
+   "Criar um ambiente isolado com o Docker.",
+   "Realizar revisões de código em equipe.",
+   answer = "Manter um README.md informativo para cada projeto."
+)
+```
+
+`r longmcq(q_final6)`
 

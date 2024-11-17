@@ -1,8 +1,8 @@
 # Introdução
 
-**Princípios básicos de _DataOps_: um guia prático com R, Git e Quarto** é um curso desenhado para fornecer uma compreensão prática de _DataOps_, uma metodologia que integra processos de automação e colaboração para melhorar a eficiência em projectos de ciência de dados. 
+**Princípios básicos de _DataOps_: um guia prático com R, Git e Quarto** é um curso desenhado para fornecer uma compreensão prática de _DataOps_, uma metodologia que integra processos de automação e colaboração para melhorar a eficiência em projetos de ciência de dados. 
 
-Na _wikipédia_ podemos encontrar como [definição de _DataOps_](https://en.wikipedia.org/wiki/DataOps), algo como:   
+Na _wikipédia_ podemos encontrar como [definição de _DataOps_](https://en.wikipedia.org/wiki/DataOps){.uri target="_blank"}, algo como:   
 
 >
 DataOps é um conjunto de práticas, processos e tecnologias que combina uma perspetiva integrada e orientada para processos sobre dados com automação e métodos da engenharia de software. 
@@ -27,7 +27,7 @@ Juntos iremos explorar como estes princípios podem ser aplicados para melhorar 
 
 ## Verificação de aprendizagem
 
-**O que é DataOps, segundo a definição apresentada na Wikipédia?**
+**O que é _DataOps_, segundo a definição apresentada na Wikipédia?**
 
 ```{r}
 #| echo: false

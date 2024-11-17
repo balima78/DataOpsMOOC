@@ -94,7 +94,7 @@
     "href": "201-instal.html#conta-gitlab",
     "title": "3  Instalação",
     "section": "3.2 Conta GitLab",
-    "text": "3.2 Conta GitLab\nO GitLab é uma plataforma de gestão de repositórios Git que permite aos desenvolvedores colaborar em projetos de software e/ou de dados.\nAlém disto, o GitLab fornece recursos avançados de gestão de projetos, como acompanhamento de tarefas, gestão de backlog e integração com kanban, que podem ser muito úteis em projectos de DataOps.\nUma alternativa popular ao GitLab é o GitHub. Os participantes que prefiram esta segunda opção poderão continuar a acompanhar o curso sem grandes entraves.\n\n3.2.1 Como Criar uma Conta no GitLab\n\nSe ainda não tivermos uma conta no GitLab, podemos aceder ao site do GitLab.\nNa página inicial, clicamos no botão Sign In (Registrar) no canto superior direito.\nDepois de irmos para Register now, podemos preencher o Formulário de registo:\n\n\nApós preenchermos todas as informações, clicamos em botão “Continue” (continuar).\n\nVerificamos o E-mail:\n\nReceberemos um e-mail com um código de verificação. Introduzimos o código na página do GitLab para activar a conta.\n\nConfiguramos o nosso Perfil:\n\nApós verificarmos a conta, podemos fazer a configuração do nosso perfil, adicionando uma foto e informações adicionais, se assim o desejarmos.",
+    "text": "3.2 Conta GitLab\nO GitLab é uma plataforma de gestão de repositórios Git que permite aos desenvolvedores colaborar em projetos de software e/ou de dados.\nAlém disto, o GitLab fornece recursos avançados de gestão de projetos, como acompanhamento de tarefas, gestão de backlog e integração com kanban, que podem ser muito úteis em projetos de DataOps.\nUma alternativa popular ao GitLab é o GitHub. Os participantes que prefiram esta segunda opção poderão continuar a acompanhar o curso sem grandes entraves.\n\n3.2.1 Como Criar uma Conta no GitLab\n\nSe ainda não tivermos uma conta no GitLab, podemos aceder ao site do GitLab.\nNa página inicial, clicamos no botão Sign In (Registrar) no canto superior direito.\nDepois de irmos para Register now, podemos preencher o Formulário de registo:\n\n\nApós preenchermos todas as informações, clicamos em botão “Continue” (continuar).\n\nVerificamos o E-mail:\n\nReceberemos um e-mail com um código de verificação. Introduzimos o código na página do GitLab para activar a conta.\n\nConfiguramos o nosso Perfil:\n\nApós verificarmos a conta, podemos fazer a configuração do nosso perfil, adicionando uma foto e informações adicionais, se assim o desejarmos.",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Instalação</span>"
     ]
@@ -124,7 +124,7 @@
     "href": "201-instal.html#a-seguir",
     "title": "3  Instalação",
     "section": "3.5 A seguir",
-    "text": "3.5 A seguir\nAgora que instalamos todas as ferramentas necessárias, estamos prontos para começar a explorar como as podemos usar nos nossos projectos em DataOps. No próximo capítulo, iremos introduzir os conceitos básicos de controlo de versões com o Git e começar a configurar o nosso primeiro repositório.",
+    "text": "3.5 A seguir\nAgora que instalamos todas as ferramentas necessárias, estamos prontos para começar a explorar como as podemos usar nos nossos projetos em DataOps. No próximo capítulo, iremos introduzir os conceitos básicos de controlo de versões com o Git e começar a configurar o nosso primeiro repositório.",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Instalação</span>"
     ]
@@ -344,7 +344,7 @@
     "href": "205-renv.html#renv",
     "title": "7  Biblioteca de projeto",
     "section": "",
-    "text": "install.packages(\"renv\")",
+    "text": "Ushey and Wickham (2024)\n\n\n\ninstall.packages(\"renv\")",
     "crumbs": [
       "<span class='chapter-number'>7</span>  <span class='chapter-title'>Biblioteca de projeto</span>"
     ]
@@ -364,39 +364,109 @@
     "href": "205-renv.html#a-seguir",
     "title": "7  Biblioteca de projeto",
     "section": "7.3 A seguir",
-    "text": "7.3 A seguir\nApenas nos resta publicar o nosso produto final. No próximo capítulo, vamos disponibilizar, publicamente, o nosso dashboard, duma forma simples e gratuita.",
+    "text": "7.3 A seguir\nNo próximo capítulo, vamos definir algumas boas práticas no desenvolvimento em equipa e no que é trabalho colaborativo.\n\n\n\n\nUshey, Kevin, and Hadley Wickham. 2024. Renv: Project Environments. https://CRAN.R-project.org/package=renv.",
     "crumbs": [
       "<span class='chapter-number'>7</span>  <span class='chapter-title'>Biblioteca de projeto</span>"
     ]
   },
   {
-    "objectID": "206-pub.html",
-    "href": "206-pub.html",
-    "title": "8  Publicação",
+    "objectID": "206-colab.html",
+    "href": "206-colab.html",
+    "title": "8  Colaboração",
+    "section": "",
+    "text": "8.1 Encontrar (Find)\nOs colaboradores precisam de ser capazes de localizar rapidamente e com facilidade o código relevante.\nQuer seja para resolver um problema, colaborar numa tarefa ou dar continuidade ao trabalho de outra pessoa, deve ser sempre evitado o código disperso ou mal organizado.\nA utilização de uma plataforma como o GitLab com repositórios bem organizados e assente no controlo de versões com o Git, deve ser a base de qualquer projeto. Aqui insere-se também a necessidade de ter para cada projeto um documento README.md que seja informativo.\nÉ ainda recomendável a definição de convenções de nomenclatura (para ficheiros, scripts ou pastas) que sejam claras e que usem nomes intuitivos.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Colaboração</span>"
+    ]
+  },
+  {
+    "objectID": "206-colab.html#executar-run",
+    "href": "206-colab.html#executar-run",
+    "title": "8  Colaboração",
+    "section": "8.2 Executar (Run)",
+    "text": "8.2 Executar (Run)\nTodos os colaboradores de um projeto devem conseguir executar o código de forma consistente e sem falhas devido a dependências não documentadas ou mal geridas. O recurso ao pacote {renv} (Ushey and Wickham 2024) permite criar bibliotecas de pacotes por projeto e registar a versão do R utilizada. Uma ferramenta como o Docker permite ir um pouco mais além, criando ambientes isolados para distribuir e executar código que funciona de forma consistente em diversos sistemas.\nDefinir instruções claras no README de como deve ser executado o código e testar scripts regularmente em diferentes máquinas, são formas de garantir a robustez do código.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Colaboração</span>"
+    ]
+  },
+  {
+    "objectID": "206-colab.html#entender-understand",
+    "href": "206-colab.html#entender-understand",
+    "title": "8  Colaboração",
+    "section": "8.3 Entender (Understand)",
+    "text": "8.3 Entender (Understand)\nNuma equipa madura, os seus membros deveriam ser capazes de compreender o código uns dos outros, para contribuir ou resolver problemas sem depender excessivamente de explicações.\nA documentação de funções num formato padrão com o pacote {roxygen2} (Wickham et al. 2024) do R, ou simplesmente ir adicionando comentários explicativos ao longo do código são facilitadores para esta compreensão.\nPretendem-se comentários concisos mas informativos explicando não só o “como” mas também o “porquê”. A realização de revisões de código em equipa promove um entendimento compartilhado e ajuda a melhorar a documentação técnica de scripts e fluxos de trabalho.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Colaboração</span>"
+    ]
+  },
+  {
+    "objectID": "206-colab.html#editar-edit",
+    "href": "206-colab.html#editar-edit",
+    "title": "8  Colaboração",
+    "section": "8.4 Editar (Edit)",
+    "text": "8.4 Editar (Edit)\nQuando são necessárias alterações ou melhorias ao código, qualquer membro da equipa deveria ser capaz de fazer modificações sem introduzir erros ou estragar o trabalho existente.\nAqui, o controlo de versões com o Git é fundamental, quer seja para garantir que não se perde o trabalho feito, quer seja para comunicar e gerir conflitos ou inconsistências.\nMensagens de commit descritivas e informativas, trabalhar em branches separados e realizar merge requests para revisão antes da integração com o código principal, são tarefas que devem ser dominadas por toda a equipa e que não podem ser descoradas.\nImplementar testes automatizados que garantem que novas alterações não partem o código existente, deveria ser também uma prática comum nos projetos de Ciência de Dados.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Colaboração</span>"
+    ]
+  },
+  {
+    "objectID": "206-colab.html#resumindo",
+    "href": "206-colab.html#resumindo",
+    "title": "8  Colaboração",
+    "section": "8.5 Resumindo",
+    "text": "8.5 Resumindo\n\nComunicação: Todos os colaboradores têm de saber não só onde procurar informações mas também como interagir com o código.\nCultura de Qualidade: A adopção de padrões consistentes facilita todos os níveis da hierarquia nas necessidades.\nFerramentas comuns: Não basta que todos escrevam código em R, é também necessário que todos utilizem ferramentas como o Git e uma plataforma como o GitLab.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Colaboração</span>"
+    ]
+  },
+  {
+    "objectID": "206-colab.html#verificação-de-aprendizagem",
+    "href": "206-colab.html#verificação-de-aprendizagem",
+    "title": "8  Colaboração",
+    "section": "8.6 Verificação de aprendizagem",
+    "text": "8.6 Verificação de aprendizagem\nQual é a ferramenta referida para criar ambientes isolados e garantir a consistência na execução de código?\n\n Docker Git GitLab {roxygen2}\n\nDo que aprendeu, quais as práticas que ajudam a facilitar o nível ‘Editar’?\n\n Criar bibliotecas de pacotes com {renv}. Implementar mensagens de commit descritivas e usar branches separados. Usar comentários explicativos para compreender o código. Adotar convenções de nomenclatura claras.\n\nQual dos seguintes aspectos é identificado como fundamental para o sucesso em todos os níveis da hierarquia de código?\n\n Ter membros de equipa que dominem apenas uma ferramenta específica. Usar o mesmo ambiente de desenvolvimento local. Adotar uma cultura de qualidade e ferramentas comuns. Manter o foco exclusivamente na execução de código sem falhas.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Colaboração</span>"
+    ]
+  },
+  {
+    "objectID": "206-colab.html#a-seguir",
+    "href": "206-colab.html#a-seguir",
+    "title": "8  Colaboração",
+    "section": "8.7 A seguir",
+    "text": "8.7 A seguir\nApenas nos resta publicar o nosso produto final. No próximo capítulo, vamos disponibilizar, publicamente, o nosso dashboard, duma forma simples e gratuita.\n\n\n\n\nUshey, Kevin, and Hadley Wickham. 2024. Renv: Project Environments. https://CRAN.R-project.org/package=renv.\n\n\nWickham, Hadley. 2024. “R in Production.” POSIT. 2024. https://www.youtube.com/watch?v=BQk2-3inViM.\n\n\nWickham, Hadley, Peter Danenberg, Gábor Csárdi, and Manuel Eugster. 2024. Roxygen2: In-Line Documentation for r. https://roxygen2.r-lib.org/.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Colaboração</span>"
+    ]
+  },
+  {
+    "objectID": "207-pub.html",
+    "href": "207-pub.html",
+    "title": "9  Publicação",
     "section": "",
     "text": "Por fim (e como bónus), vamos tornar público o nosso dashboard. Usaremos o serviço netlify, para que, de uma forma simples, rápida e sem custos, possamos publicar o nosso dashboard na Internet.\nAntes de mais teremos de fazer uma pequena alteração ao nosso projecto:\n\nAgora, apenas temos de entrar no netlify, com a nossa conta do Gitlab e apontarmos para o nosso repositório:\n\nIPH",
     "crumbs": [
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Publicação</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Publicação</span>"
     ]
   },
   {
     "objectID": "800-avaliacao.html",
     "href": "800-avaliacao.html",
-    "title": "9  Avaliação final",
+    "title": "10  Avaliação final",
     "section": "",
-    "text": "Nesta avaliação final do curso Princípios básicos de DataOps: um guia prático com R, Git e Quarto, os participantes garantem a aprovação se responderem acertadamente a mais de 50% das questões.\nResponda a todas as perguntas:\n\nQual das opções descreve melhor o objetivo principal de DataOps?\n\n\n Centralizar todos os dados de uma empresa em um único local. Facilitar a automação e colaboração na análise de dados, garantindo reprodutibilidade. Substituir os processos tradicionais de desenvolvimento de software. Aumentar a velocidade de processamento dos dados.\n\n\nNo Git, qual é o comando que devemos usar para enviarmos as alterações locais para o repositório remoto no GitLab? \nQue ficheiro é criado pelo pacote {renv} para registar as versões dos pacotes utilizados num projeto, permitindo a reprodutibilidade do ambiente? \nQual das seguintes afirmações é a que melhor descreve o uso de branches no Git?\n\n\n Um branch permite experimentar novas funcionalidades sem afetar o código principal. Branches eliminam a necessidade de commits. Um branch sempre precisa ser mergido automaticamente. Branches removem a necessidade de gestão de versões.\n\n\nQual a função R que devemos usar para iniciarmos a gestão dos pacotes com o {renv}?\nrenv:: \nTRUE or FALSE? No RStudio podemos visualizar o histórico de commits e merges de um projeto integrado com o Git. TRUEFALSE\nTRUE or FALSE? O ficheiro renv.lock permite restaurar um projeto em qualquer computador, mantendo as mesmas versões dos pacotes, mesmo se não estiverem disponíveis na biblioteca padrão do R. TRUEFALSE",
+    "text": "Nesta avaliação final do curso Princípios básicos de DataOps: um guia prático com R, Git e Quarto, os participantes garantem a aprovação se responderem acertadamente a mais de 50% das questões.\nResponda a todas as perguntas:\n\nQual das opções descreve melhor o objetivo principal de DataOps?\n\n\n Centralizar todos os dados de uma empresa em um único local. Facilitar a automação e colaboração na análise de dados, garantindo reprodutibilidade. Substituir os processos tradicionais de desenvolvimento de software. Aumentar a velocidade de processamento dos dados.\n\n\nNo Git, qual é o comando que devemos usar para enviarmos as alterações locais para o repositório remoto no GitLab? \nQue ficheiro é criado pelo pacote {renv} para registar as versões dos pacotes utilizados num projeto, permitindo a reprodutibilidade do ambiente? \nQual das seguintes afirmações é a que melhor descreve o uso de branches no Git?\n\n\n Um branch permite experimentar novas funcionalidades sem afetar o código principal. Branches eliminam a necessidade de commits. Um branch sempre precisa ser mergido automaticamente. Branches removem a necessidade de gestão de versões.\n\n\nQual a função R que devemos usar para iniciarmos a gestão dos pacotes com o {renv}?\nrenv:: \nTRUE or FALSE? No RStudio podemos visualizar o histórico de commits e merges de um projeto integrado com o Git. TRUEFALSE\nTRUE or FALSE? O ficheiro renv.lock permite restaurar um projeto em qualquer computador, mantendo as mesmas versões dos pacotes, mesmo se não estiverem disponíveis na biblioteca padrão do R. TRUEFALSE\nQual é o nível mais básico da hierarquia nas necessidades de código em Ciência de Dados?\n\n\n Entender (Understand) Editar (Edit) Encontrar (Find) Executar (Run)\n\n\nQual a prática recomendada para facilitar o nível ‘Encontrar’ da hierarquia nas necessidades?\n\n\n Usar o {renv} para gerenciar dependências. Criar um ambiente isolado com o Docker. Realizar revisões de código em equipe. Manter um README.md informativo para cada projeto.",
     "crumbs": [
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Avaliação final</span>"
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Avaliação final</span>"
     ]
   },
   {
     "objectID": "900-summary.html",
     "href": "900-summary.html",
-    "title": "10  Conclusão",
+    "title": "11  Conclusão",
     "section": "",
-    "text": "Ao concluirmos o curso introdutório Princípios básicos de DataOps: um guia prático com R, Git e Quarto, esperamos ter oferecido uma base que permita a implementação dos princípios fundamentais de DataOps em próximos projetos.\nComeçámos com uma definição simples de DataOps, sublinhando a sua importância no cenário atual de análise de dados: uma abordagem que permite uma gestão eficiente, automatizada e colaborativa dos dados, facilitando a entrega rápida de insights confiáveis e reprodutíveis.\nNeste curso, apresentámos ferramentas essenciais para implementar uma abordagem de DataOps: R, RStudio, Quarto, Git e GitLab. Cada uma desempenha um papel crucial no ciclo de vida dos dados e no fluxo de trabalho do cientista de dados. Com estes recursos, explorámos um caso prático com base no Índice de Preços de Habitação do INE, dando uma aplicação prática e real aos conceitos de DataOps.\nAo longo do nosso processo, criámos um repositório no GitLab, que foi clonado localmente com o RStudio, estabelecendo o ponto central para o versionamento de nosso projeto. Durante o desenvolvimento do nosso dashboard em Quarto, realizámos commits das alterações ao código, criámos novos branches para experimentar funcionalidades e melhorias, fizemos push das mudanças para o GitLab e concluímos com merge requests, unindo o código modificado ao branch principal. Ainda, fizemos o pull das alterações aprovadas para o nosso ambiente local, garantindo que as versões estivessem sempre sincronizadas.\nO histórico de commits e merges ficou sempre acessível no RStudio, oferecendo uma visão clara do progresso e permitindo o rastreamento das mudanças feitas ao longo do projeto.\nIntroduzimos também o uso do pacote {renv} para registar as versões dos pacotes R utilizados, o que é essencial para garantirmos a reprodutibilidade e o controle de dependências do projeto, facilitando a manutenção e a execução futura do código, independentemente de eventuais atualizações dos pacotes.\nConcluímos, assim, com um exemplo completo, como aplicar DataOps num fluxo de trabalho de análise de dados. A prática com ferramentas de controlo de versão e gestão de pacotes cria uma base sólida para o desenvolvimento de análises robustas, facilitando tanto a colaboração em equipa quanto a evolução contínua dos projetos.\nQuem quiser continuar a aprofundar o mundo do DataOps, encontrará no livro Building Reproducible Analytical Pipelines with R(Rodrigues 2023) uma fonte esclarecida e cheia do melhor conteúdo para auxiliar o trabalho a desenvolver por Cientistas de dados, Estatísticos ou Investigadores.\nEsperamos que este curso tenha sido um ponto de partida útil e inspirador na sua jornada em DataOps!\n\n\n\n\nRodrigues, Bruno. 2023. “Building Reproducible Analytical Pipelines with r.” Independently published. 2023. https://www.amazon.com/dp/B0C87H6MGF/.",
+    "text": "Ao concluirmos o curso introdutório Princípios básicos de DataOps: um guia prático com R, Git e Quarto, esperamos ter oferecido uma base que permita a implementação dos princípios fundamentais de DataOps em próximos projetos.\n\n\n\nPrincípios básicos de DataOps\n\n\nComeçámos com uma definição simples de DataOps, sublinhando a sua importância no cenário atual de análise de dados: uma abordagem que permite uma gestão eficiente, automatizada e colaborativa dos dados, facilitando a entrega rápida de insights confiáveis e reprodutíveis.\nNeste curso, apresentámos ferramentas essenciais para implementar uma abordagem de DataOps: R, RStudio, Quarto, Git e GitLab. Cada uma desempenha um papel crucial no ciclo de vida dos dados e no fluxo de trabalho do cientista de dados. Com estes recursos, explorámos um caso prático com base no Índice de Preços de Habitação do INE, dando uma aplicação prática e real aos conceitos de DataOps.\nAo longo do nosso processo, criámos um repositório no GitLab, que foi clonado localmente com o RStudio, estabelecendo o ponto central para o controlo de versões do nosso projeto. Durante o desenvolvimento do nosso dashboard em Quarto, realizámos commits das alterações ao código, criámos novos branches para experimentar funcionalidades e melhorias, fizemos push das mudanças para o GitLab e concluímos com merge requests, unindo o código modificado ao branch principal. Ainda, fizemos o pull das alterações aprovadas para o nosso ambiente local, garantindo que as versões estivessem sempre sincronizadas.\nO histórico de commits e merges ficou sempre acessível no RStudio, oferecendo uma visão clara do nosso progresso e permitindo o rastreamento das mudanças feitas ao longo do projeto.\nIntroduzimos também o uso do pacote {renv} para registar as versões dos pacotes R utilizados, o que é essencial para garantirmos a reprodutibilidade e o controle de dependências do projeto, facilitando a manutenção e a execução futura do código, independentemente de eventuais atualizações dos pacotes.\nApresentámos ainda uma hierarquia nas necessidades de código em projetos de Ciência de Dados, sugerida por Wickham (2024), enfatizando práticas colaborativas, organização, consistência, documentação e controle de versões para garantir eficiência e qualidade.\nConcluímos, assim, com um exemplo completo, como aplicar DataOps num fluxo de trabalho de análise de dados. A prática com ferramentas de controlo de versão e gestão de pacotes cria uma base sólida para o desenvolvimento de análises robustas, facilitando tanto a colaboração em equipa quanto a evolução contínua dos projetos.\nQuem quiser continuar a aprofundar o mundo do DataOps, encontrará no livro Building Reproducible Analytical Pipelines with R (Rodrigues 2023) uma fonte esclarecida e cheia do melhor conteúdo para auxiliar o trabalho a desenvolver por Cientistas de Dados, Estatísticos ou Investigadores.\nEsperamos que este curso tenha sido um ponto de partida útil e inspirador na sua jornada em DataOps!\n\n\n\n\nRodrigues, Bruno. 2023. “Building Reproducible Analytical Pipelines with r.” Independently published. 2023. https://www.amazon.com/dp/B0C87H6MGF/.\n\n\nWickham, Hadley. 2024. “R in Production.” POSIT. 2024. https://www.youtube.com/watch?v=BQk2-3inViM.",
     "crumbs": [
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Conclusão</span>"
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Conclusão</span>"
     ]
   },
   {
@@ -404,7 +474,7 @@
     "href": "references.html",
     "title": "Referências",
     "section": "",
-    "text": "Government Analysis Function. 2024. “Reproducible Analytical\nPipelines (RAP).” 2024. https://analysisfunction.civilservice.gov.uk/support/reproducible-analytical-pipelines/.\n\n\nRodrigues, Bruno. 2023. “Building Reproducible Analytical\nPipelines with r.” Independently published. 2023. https://www.amazon.com/dp/B0C87H6MGF/.\n\n\n“The DataOps Manifesto.” 2024. 2024. https://dataopsmanifesto.org/en/.",
+    "text": "Government Analysis Function. 2024. “Reproducible Analytical\nPipelines (RAP).” 2024. https://analysisfunction.civilservice.gov.uk/support/reproducible-analytical-pipelines/.\n\n\nRodrigues, Bruno. 2023. “Building Reproducible Analytical\nPipelines with r.” Independently published. 2023. https://www.amazon.com/dp/B0C87H6MGF/.\n\n\n“The DataOps Manifesto.” 2024. 2024. https://dataopsmanifesto.org/en/.\n\n\nUshey, Kevin, and Hadley Wickham. 2024. Renv: Project\nEnvironments. https://CRAN.R-project.org/package=renv.\n\n\nWickham, Hadley. 2024. “R in Production.” POSIT. 2024. https://www.youtube.com/watch?v=BQk2-3inViM.\n\n\nWickham, Hadley, Peter Danenberg, Gábor Csárdi, and Manuel Eugster.\n2024. Roxygen2: In-Line Documentation for r. https://roxygen2.r-lib.org/.",
     "crumbs": [
       "Referências"
     ]

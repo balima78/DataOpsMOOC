@@ -1,15 +1,15 @@
 # Biblioteca de projeto
 
-Após finalizarmos a primeira versão dos nosso *dashboard*, temos de garantir a reprodutibilidade do trabalho desenvolvido. Para isto, uma solução rápida e de baixo custo passa por registarmos as versões dos pacotes usados (bem como a versão do R que usamos no nosso desenvolvimento).
+Após finalizarmos a primeira versão dos nosso *dashboard*, temos de garantir a reprodutibilidade do trabalho desenvolvido. Para isto, uma solução, rápida e de baixo custo, passa por registarmos as versões dos pacotes usados (bem como a versão do R que usamos no nosso desenvolvimento).
 
-O pacote [{renv}](https://rstudio.github.io/renv/articles/renv.html) permite criar bibliotecas específicas por projeto (uma biblioteca é um conjunto de pacotes R instalados no nosso computador), registando, num ficheiro `renv.lock`, as versões exatas dos pacotes que foram usados. Este ficheiro vai possibilitar o restauro do ambiente usado noutro computador ou no futuro, isolando o projeto de outras bibliotecas instaladas. Assim conseguimos manter a consistência do ambiente de desenvolvimento ao longo do tempo, em especial permite que possamos trabalhar com versões diferentes de pacotes do R.
+O pacote [{renv}](https://rstudio.github.io/renv/articles/renv.html){.uri target="_blank"} permite criar bibliotecas específicas por projeto (uma biblioteca é um conjunto de pacotes R instalados no nosso computador), registando, num ficheiro `renv.lock`, as versões exatas dos pacotes que foram usados. Este ficheiro vai possibilitar o restauro do ambiente usado noutro computador ou no futuro, isolando o projeto de outras bibliotecas instaladas. Assim conseguimos manter a consistência do ambiente de desenvolvimento ao longo do tempo, em especial permite que possamos trabalhar com versões diferentes de pacotes do R.
 
-Para economizar tempo, numa nova biblioteca criada com o [{renv}](https://rstudio.github.io/renv/articles/renv.html)}, os pacotes necessários são copiados da biblioteca principal do R (caso já estejam instalados na biblioteca padrão), em vez de serem baixados e reinstalados.
+Para economizar tempo, numa nova biblioteca criada com o [{renv}](https://rstudio.github.io/renv/articles/renv.html){.uri target="_blank"}, os pacotes necessários são copiados da biblioteca principal do R (caso já estejam instalados na biblioteca padrão), em vez de serem baixados e reinstalados.
 
 
 ## `{renv}`
 
-![](images/renv.svg){width=20%}
+![@renv](images/renv.svg){width=20%}
 
 Devemos começar por instalar o pacote `{renv}`, tal como instalaríamos qualquer outro pacote no R:
 
@@ -57,4 +57,4 @@ q_renv2 <- c(
 
 ## A seguir
  
-Apenas nos resta publicar o nosso produto final. No próximo capítulo, vamos disponibilizar, publicamente, o nosso *dashboard*, duma forma simples e gratuita.  
+No próximo capítulo, vamos definir algumas boas práticas no desenvolvimento em equipa e no que é trabalho colaborativo.  

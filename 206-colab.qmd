@@ -1,0 +1,99 @@
+# Colaboração
+
+No contexto do trabalho em equipa, podemos definir uma hierarquia nas necessidades de código em Ciência de Dados [@hw].
+
+No trabalho colaborativo, não basta que todos usem as mesmas ferramentas, é também necessário estabelecer práticas que garantam a eficiência e a qualidade do trabalho em grupo.  
+
+Definimos 4 níveis hierárquicos (do mais básico ao mais avançado) para uma utilização e/ ou manipulação de código bem sucedida em projetos de Ciência de Dados: 
+
+![A data scientist's hierarchy of code needs](images/piramide.png)
+
+## Encontrar (*Find*)
+
+Os colaboradores precisam de ser capazes de localizar rapidamente e com facilidade o código relevante.
+
+Quer seja para resolver um problema, colaborar numa tarefa ou dar continuidade ao trabalho de outra pessoa, deve ser sempre evitado o código disperso ou mal organizado.
+
+A utilização de uma plataforma como o GitLab com repositórios bem organizados e assente no controlo de versões com o Git, deve ser a base de qualquer projeto. Aqui insere-se também a necessidade de ter para cada projeto um documento `README.md` que seja informativo.
+
+É ainda recomendável a definição de convenções de nomenclatura (para ficheiros, *scripts* ou pastas) que sejam claras e que usem nomes intuitivos. 
+
+## Executar (*Run*)
+
+Todos os colaboradores de um projeto devem conseguir executar o código de forma consistente e sem falhas devido a dependências não documentadas ou mal geridas. O recurso ao pacote `{renv}` [@renv] permite criar bibliotecas de pacotes por projeto e registar a versão do R utilizada. Uma ferramenta como o [Docker](https://www.docker.com/) permite ir um pouco mais além, criando ambientes isolados para distribuir e executar código que funciona de forma consistente em diversos sistemas.
+
+Definir instruções claras no README de como deve ser executado o código e testar *scripts* regularmente em diferentes máquinas, são formas de garantir a robustez do código.
+
+## Entender (*Understand*)
+
+Numa equipa madura, os seus membros deveriam ser capazes de compreender o código uns dos outros, para contribuir ou resolver problemas sem depender excessivamente de explicações.
+
+A documentação de funções num formato padrão com o pacote `{roxygen2}` [@roxygen2] do R, ou simplesmente ir adicionando comentários explicativos ao longo do código são facilitadores para esta compreensão.
+
+Pretendem-se comentários concisos mas informativos explicando não só o "como" mas também o "porquê". A realização de revisões de código em equipa promove um entendimento compartilhado e ajuda a melhorar a documentação técnica de *scripts* e fluxos de trabalho.
+
+## Editar (*Edit*)
+
+Quando são necessárias alterações ou melhorias ao código, qualquer membro da equipa deveria ser capaz de fazer modificações sem introduzir erros ou estragar o trabalho existente.
+
+Aqui, o controlo de versões com o Git é fundamental, quer seja para garantir que não se perde o trabalho feito, quer seja para comunicar e gerir conflitos ou inconsistências. 
+
+Mensagens de *commit* descritivas e informativas, trabalhar em *branches* separados e realizar *merge requests* para revisão antes da integração com o código principal, são tarefas que devem ser dominadas por toda a equipa e que não podem ser descoradas.
+
+Implementar testes automatizados que garantem que novas alterações não partem o código existente, deveria ser também uma prática comum nos projetos de Ciência de Dados.
+
+## Resumindo
+
++ **Comunicação**: Todos os colaboradores têm de saber não só onde procurar informações mas também como interagir com o código.
+
++ **Cultura de Qualidade**: A adopção de padrões consistentes facilita todos os níveis da hierarquia nas necessidades.
+
++ **Ferramentas comuns**: Não basta que todos escrevam código em R, é também necessário que todos utilizem ferramentas como o Git e uma plataforma como o GitLab. 
+
+## Verificação de aprendizagem
+
+**Qual é a ferramenta referida para criar ambientes isolados e garantir a consistência na execução de código?**
+
+```{r}
+#| echo: false
+q_piramid1 <- c(
+   answer = "Docker",
+   "Git",
+   "GitLab",
+   "`{roxygen2}`"
+)
+```
+
+`r longmcq(q_piramid1)`
+
+**Do que aprendeu, quais as práticas que ajudam a facilitar o nível 'Editar'?**
+
+```{r}
+#| echo: false
+q_piramid2 <- c(
+   "Criar bibliotecas de pacotes com {renv}.",
+   answer = "Implementar mensagens de commit descritivas e usar branches separados.",
+   "Usar comentários explicativos para compreender o código.",
+   "Adotar convenções de nomenclatura claras."
+)
+```
+
+`r longmcq(q_piramid2)`
+
+**Qual dos seguintes aspectos é identificado como fundamental para o sucesso em todos os níveis da hierarquia de código?**
+
+```{r}
+#| echo: false
+q_piramid3 <- c(
+   "Ter membros de equipa que dominem apenas uma ferramenta específica.",
+   "Usar o mesmo ambiente de desenvolvimento local.",
+   answer = "Adotar uma cultura de qualidade e ferramentas comuns.",
+   "Manter o foco exclusivamente na execução de código sem falhas."
+)
+```
+
+`r longmcq(q_piramid3)`
+
+## A seguir
+ 
+Apenas nos resta publicar o nosso produto final. No próximo capítulo, vamos disponibilizar, publicamente, o nosso *dashboard*, duma forma simples e gratuita.  

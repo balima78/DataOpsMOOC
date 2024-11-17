@@ -2,9 +2,9 @@ project:
   type: book
   output-dir: docs
 book:
-  title: Princípios básicos de DataOps
+  title: Princípios básicos de *DataOps*
   author: Bruno A Lima
-  date: '2024-10-20'
+  date: '2024-11-10'
   search: true
   repo-url: https://github.com/balima78/DataOpsMOOC
   repo-actions:
@@ -22,7 +22,8 @@ book:
   - 203-dash.qmd
   - 204-versoes.qmd
   - 205-renv.qmd
-  - 206-pub.qmd
+  - 206-colab.qmd
+  - 207-pub.qmd
   - 800-avaliacao.qmd
   - 900-summary.qmd
   - references.qmd

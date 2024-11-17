@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Princípios básicos de DataOps - 8&nbsp; Publicação</title>
+<title>Princípios básicos de DataOps - 8&nbsp; Colaboração</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -30,7 +50,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./800-avaliacao.html" rel="next">
+<link href="./207-pub.html" rel="next">
 <link href="./205-renv.html" rel="prev">
 <link href="./images/coverDOB.jfif" rel="icon">
 <script src="site_libs/quarto-html/quarto.js"></script>
@@ -83,7 +103,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./206-pub.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Publicação</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./206-colab.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Colaboração</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -98,7 +118,7 @@ ul.task-list li input[type="checkbox"] {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">Princípios básicos de DataOps</a> 
+      <a href="./">Princípios básicos de <em>DataOps</em></a> 
         <div class="sidebar-tools-main">
     <a href="https://github.com/balima78/DataOpsMOOC" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
 </div>
@@ -161,20 +181,26 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./206-pub.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Publicação</span></span></a>
+  <a href="./206-colab.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Colaboração</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./207-pub.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Publicação</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./800-avaliacao.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Avaliação final</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Avaliação final</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./900-summary.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Conclusão</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Conclusão</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -189,14 +215,26 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#encontrar-find" id="toc-encontrar-find" class="nav-link active" data-scroll-target="#encontrar-find"><span class="header-section-number">8.1</span> Encontrar (<em>Find</em>)</a></li>
+  <li><a href="#executar-run" id="toc-executar-run" class="nav-link" data-scroll-target="#executar-run"><span class="header-section-number">8.2</span> Executar (<em>Run</em>)</a></li>
+  <li><a href="#entender-understand" id="toc-entender-understand" class="nav-link" data-scroll-target="#entender-understand"><span class="header-section-number">8.3</span> Entender (<em>Understand</em>)</a></li>
+  <li><a href="#editar-edit" id="toc-editar-edit" class="nav-link" data-scroll-target="#editar-edit"><span class="header-section-number">8.4</span> Editar (<em>Edit</em>)</a></li>
+  <li><a href="#resumindo" id="toc-resumindo" class="nav-link" data-scroll-target="#resumindo"><span class="header-section-number">8.5</span> Resumindo</a></li>
+  <li><a href="#verificação-de-aprendizagem" id="toc-verificação-de-aprendizagem" class="nav-link" data-scroll-target="#verificação-de-aprendizagem"><span class="header-section-number">8.6</span> Verificação de aprendizagem</a></li>
+  <li><a href="#a-seguir" id="toc-a-seguir" class="nav-link" data-scroll-target="#a-seguir"><span class="header-section-number">8.7</span> A seguir</a></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/balima78/DataOpsMOOC/edit/main/206-colab.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/balima78/DataOpsMOOC/issues" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Publicação</span></h1>
+<h1 class="title"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Colaboração</span></h1>
 </div>
 
 
@@ -213,14 +251,80 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Por fim (e como bónus), vamos tornar público o nosso <em>dashboard</em>. Usaremos o serviço <a href="https://www.netlify.com/">netlify</a>, para que, de uma forma simples, rápida e sem custos, possamos publicar o nosso <em>dashboard</em> na Internet.</p>
-<p>Antes de mais teremos de fazer uma pequena alteração ao nosso projecto:</p>
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/xT3WJh1_nYk" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<p>Agora, apenas temos de entrar no <a href="https://www.netlify.com/">netlify</a>, com a nossa conta do Gitlab e apontarmos para o nosso repositório:</p>
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/0fK__haOVxk" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<p><a href="https://iphine.netlify.app/">IPH</a></p>
+<p>No contexto do trabalho em equipa, podemos definir uma hierarquia nas necessidades de código em Ciência de Dados <span class="citation" data-cites="hw">(<a href="references.html#ref-hw" role="doc-biblioref">Wickham 2024</a>)</span>.</p>
+<p>No trabalho colaborativo, não basta que todos usem as mesmas ferramentas, é também necessário estabelecer práticas que garantam a eficiência e a qualidade do trabalho em grupo.</p>
+<p>Definimos 4 níveis hierárquicos (do mais básico ao mais avançado) para uma utilização e/ ou manipulação de código bem sucedida em projetos de Ciência de Dados:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/piramide.png" class="img-fluid figure-img"></p>
+<figcaption>A data scientist’s hierarchy of code needs</figcaption>
+</figure>
+</div>
+<section id="encontrar-find" class="level2" data-number="8.1">
+<h2 data-number="8.1" class="anchored" data-anchor-id="encontrar-find"><span class="header-section-number">8.1</span> Encontrar (<em>Find</em>)</h2>
+<p>Os colaboradores precisam de ser capazes de localizar rapidamente e com facilidade o código relevante.</p>
+<p>Quer seja para resolver um problema, colaborar numa tarefa ou dar continuidade ao trabalho de outra pessoa, deve ser sempre evitado o código disperso ou mal organizado.</p>
+<p>A utilização de uma plataforma como o GitLab com repositórios bem organizados e assente no controlo de versões com o Git, deve ser a base de qualquer projeto. Aqui insere-se também a necessidade de ter para cada projeto um documento <code>README.md</code> que seja informativo.</p>
+<p>É ainda recomendável a definição de convenções de nomenclatura (para ficheiros, <em>scripts</em> ou pastas) que sejam claras e que usem nomes intuitivos.</p>
+</section>
+<section id="executar-run" class="level2" data-number="8.2">
+<h2 data-number="8.2" class="anchored" data-anchor-id="executar-run"><span class="header-section-number">8.2</span> Executar (<em>Run</em>)</h2>
+<p>Todos os colaboradores de um projeto devem conseguir executar o código de forma consistente e sem falhas devido a dependências não documentadas ou mal geridas. O recurso ao pacote <code>{renv}</code> <span class="citation" data-cites="renv">(<a href="references.html#ref-renv" role="doc-biblioref">Ushey and Wickham 2024</a>)</span> permite criar bibliotecas de pacotes por projeto e registar a versão do R utilizada. Uma ferramenta como o <a href="https://www.docker.com/">Docker</a> permite ir um pouco mais além, criando ambientes isolados para distribuir e executar código que funciona de forma consistente em diversos sistemas.</p>
+<p>Definir instruções claras no README de como deve ser executado o código e testar <em>scripts</em> regularmente em diferentes máquinas, são formas de garantir a robustez do código.</p>
+</section>
+<section id="entender-understand" class="level2" data-number="8.3">
+<h2 data-number="8.3" class="anchored" data-anchor-id="entender-understand"><span class="header-section-number">8.3</span> Entender (<em>Understand</em>)</h2>
+<p>Numa equipa madura, os seus membros deveriam ser capazes de compreender o código uns dos outros, para contribuir ou resolver problemas sem depender excessivamente de explicações.</p>
+<p>A documentação de funções num formato padrão com o pacote <code>{roxygen2}</code> <span class="citation" data-cites="roxygen2">(<a href="references.html#ref-roxygen2" role="doc-biblioref">Wickham et al. 2024</a>)</span> do R, ou simplesmente ir adicionando comentários explicativos ao longo do código são facilitadores para esta compreensão.</p>
+<p>Pretendem-se comentários concisos mas informativos explicando não só o “como” mas também o “porquê”. A realização de revisões de código em equipa promove um entendimento compartilhado e ajuda a melhorar a documentação técnica de <em>scripts</em> e fluxos de trabalho.</p>
+</section>
+<section id="editar-edit" class="level2" data-number="8.4">
+<h2 data-number="8.4" class="anchored" data-anchor-id="editar-edit"><span class="header-section-number">8.4</span> Editar (<em>Edit</em>)</h2>
+<p>Quando são necessárias alterações ou melhorias ao código, qualquer membro da equipa deveria ser capaz de fazer modificações sem introduzir erros ou estragar o trabalho existente.</p>
+<p>Aqui, o controlo de versões com o Git é fundamental, quer seja para garantir que não se perde o trabalho feito, quer seja para comunicar e gerir conflitos ou inconsistências.</p>
+<p>Mensagens de <em>commit</em> descritivas e informativas, trabalhar em <em>branches</em> separados e realizar <em>merge requests</em> para revisão antes da integração com o código principal, são tarefas que devem ser dominadas por toda a equipa e que não podem ser descoradas.</p>
+<p>Implementar testes automatizados que garantem que novas alterações não partem o código existente, deveria ser também uma prática comum nos projetos de Ciência de Dados.</p>
+</section>
+<section id="resumindo" class="level2" data-number="8.5">
+<h2 data-number="8.5" class="anchored" data-anchor-id="resumindo"><span class="header-section-number">8.5</span> Resumindo</h2>
+<ul>
+<li><p><strong>Comunicação</strong>: Todos os colaboradores têm de saber não só onde procurar informações mas também como interagir com o código.</p></li>
+<li><p><strong>Cultura de Qualidade</strong>: A adopção de padrões consistentes facilita todos os níveis da hierarquia nas necessidades.</p></li>
+<li><p><strong>Ferramentas comuns</strong>: Não basta que todos escrevam código em R, é também necessário que todos utilizem ferramentas como o Git e uma plataforma como o GitLab.</p></li>
+</ul>
+</section>
+<section id="verificação-de-aprendizagem" class="level2" data-number="8.6">
+<h2 data-number="8.6" class="anchored" data-anchor-id="verificação-de-aprendizagem"><span class="header-section-number">8.6</span> Verificação de aprendizagem</h2>
+<p><strong>Qual é a ferramenta referida para criar ambientes isolados e garantir a consistência na execução de código?</strong></p>
+<div id="radio_YLNQQAALSC" class="webex-radiogroup">
+<label><input type="radio" autocomplete="off" name="radio_YLNQQAALSC" value="answer"> <span>Docker</span></label><label><input type="radio" autocomplete="off" name="radio_YLNQQAALSC" value=""> <span>Git</span></label><label><input type="radio" autocomplete="off" name="radio_YLNQQAALSC" value=""> <span>GitLab</span></label><label><input type="radio" autocomplete="off" name="radio_YLNQQAALSC" value=""> <span><code>{roxygen2}</code></span></label>
+</div>
+<p><strong>Do que aprendeu, quais as práticas que ajudam a facilitar o nível ‘Editar’?</strong></p>
+<div id="radio_ADCIUDCVWS" class="webex-radiogroup">
+<label><input type="radio" autocomplete="off" name="radio_ADCIUDCVWS" value=""> <span>Criar bibliotecas de pacotes com {renv}.</span></label><label><input type="radio" autocomplete="off" name="radio_ADCIUDCVWS" value="answer"> <span>Implementar mensagens de commit descritivas e usar branches separados.</span></label><label><input type="radio" autocomplete="off" name="radio_ADCIUDCVWS" value=""> <span>Usar comentários explicativos para compreender o código.</span></label><label><input type="radio" autocomplete="off" name="radio_ADCIUDCVWS" value=""> <span>Adotar convenções de nomenclatura claras.</span></label>
+</div>
+<p><strong>Qual dos seguintes aspectos é identificado como fundamental para o sucesso em todos os níveis da hierarquia de código?</strong></p>
+<div id="radio_ELDBFAFCBY" class="webex-radiogroup">
+<label><input type="radio" autocomplete="off" name="radio_ELDBFAFCBY" value=""> <span>Ter membros de equipa que dominem apenas uma ferramenta específica.</span></label><label><input type="radio" autocomplete="off" name="radio_ELDBFAFCBY" value=""> <span>Usar o mesmo ambiente de desenvolvimento local.</span></label><label><input type="radio" autocomplete="off" name="radio_ELDBFAFCBY" value="answer"> <span>Adotar uma cultura de qualidade e ferramentas comuns.</span></label><label><input type="radio" autocomplete="off" name="radio_ELDBFAFCBY" value=""> <span>Manter o foco exclusivamente na execução de código sem falhas.</span></label>
+</div>
+</section>
+<section id="a-seguir" class="level2" data-number="8.7">
+<h2 data-number="8.7" class="anchored" data-anchor-id="a-seguir"><span class="header-section-number">8.7</span> A seguir</h2>
+<p>Apenas nos resta publicar o nosso produto final. No próximo capítulo, vamos disponibilizar, publicamente, o nosso <em>dashboard</em>, duma forma simples e gratuita.</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-renv" class="csl-entry" role="listitem">
+Ushey, Kevin, and Hadley Wickham. 2024. <em>Renv: Project Environments</em>. <a href="https://CRAN.R-project.org/package=renv">https://CRAN.R-project.org/package=renv</a>.
+</div>
+<div id="ref-hw" class="csl-entry" role="listitem">
+Wickham, Hadley. 2024. <span>“R in Production.”</span> POSIT. 2024. <a href="https://www.youtube.com/watch?v=BQk2-3inViM">https://www.youtube.com/watch?v=BQk2-3inViM</a>.
+</div>
+<div id="ref-roxygen2" class="csl-entry" role="listitem">
+Wickham, Hadley, Peter Danenberg, Gábor Csárdi, and Manuel Eugster. 2024. <em>Roxygen2: In-Line Documentation for r</em>. <a href="https://roxygen2.r-lib.org/">https://roxygen2.r-lib.org/</a>.
+</div>
+</div>
+</section>
 
 </main> <!-- /main -->
 <script>
@@ -845,8 +949,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./800-avaliacao.html" class="pagination-link" aria-label="Avaliação final">
-        <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Avaliação final</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./207-pub.html" class="pagination-link" aria-label="Publicação">
+        <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Publicação</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -855,4 +959,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/balima78/DataOpsMOOC/edit/main/206-pub.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/balima78/DataOpsMOOC/issues" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/balima78/DataOpsMOOC/edit/main/206-colab.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/balima78/DataOpsMOOC/issues" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer></body></html>

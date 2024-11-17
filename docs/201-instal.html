@@ -98,7 +98,7 @@ ul.task-list li input[type="checkbox"] {
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
     <div class="sidebar-title mb-0 py-0">
-      <a href="./">Princípios básicos de DataOps</a> 
+      <a href="./">Princípios básicos de <em>DataOps</em></a> 
         <div class="sidebar-tools-main">
     <a href="https://github.com/balima78/DataOpsMOOC" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
 </div>
@@ -161,20 +161,26 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./206-pub.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Publicação</span></span></a>
+  <a href="./206-colab.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Colaboração</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./207-pub.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Publicação</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./800-avaliacao.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Avaliação final</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Avaliação final</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./900-summary.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Conclusão</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Conclusão</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -235,35 +241,35 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Instalação do R<br>
 R é uma linguagem de programação focada em análise estatística e científica de dados. Vamos utilizá-la para construir scripts e automatizar processos em <em>DataOps</em>.</p>
 <ul>
-<li>Link de Download: <a href="https://cran.r-project.org/bin/windows/base/">Download R</a></li>
+<li>Link de Download: <a href="https://cran.r-project.org/bin/windows/base/" class="uri" target="_blank">Download R</a></li>
 <li>Selecione o seu sistema operacional (Windows, macOS ou Linux) e baixe a versão mais recente do R.</li>
 <li>Siga as instruções do instalador e opte pela instalação padrão.</li>
 </ul></li>
 <li><p>Instalação do Rtools (para Windows)<br>
 Se for utilizador do Windows, precisa instalar o Rtools, um conjunto de ferramentas necessárias para compilar pacotes do R.</p>
 <ul>
-<li>Link de Download: <a href="https://cran.r-project.org/bin/windows/Rtools/">Download Rtools</a></li>
+<li>Link de Download: <a href="https://cran.r-project.org/bin/windows/Rtools/" class="uri" target="_blank">Download Rtools</a></li>
 <li>Faça o download da versão compatível com a sua versão do R. Por exemplo, para o R-4.4.1 deverá ser instalado o RTools 4.4</li>
 <li>Instale seguindo as configurações padrão e certifique-se de marcar a opção para adicionar Rtools ao caminho do sistema (PATH).</li>
 </ul></li>
 <li><p>Instalação do RStudio<br>
 RStudio é um ambiente de desenvolvimento integrado (IDE) que facilita o trabalho com R, Git e Quarto, proporcionando uma interface amigável para escrever e executar código.</p>
 <ul>
-<li>Link de Download: <a href="https://posit.co/download/rstudio-desktop/">Download RStudio</a></li>
+<li>Link de Download: <a href="https://posit.co/download/rstudio-desktop/" class="uri" target="_blank">Download RStudio</a></li>
 <li>Baixe a versão mais recente para o seu sistema operacional.</li>
 <li>Execute o instalador e siga as instruções para uma instalação padrão.</li>
 </ul></li>
 <li><p>Instalação do Git<br>
 Git é uma ferramenta de controlo de versões que permite rastrear alterações ao código, colaborar com outros usuários e gerir projetos de forma eficiente. Será fundamental para o gestão dos nossos projetos em <em>DataOps</em>.</p>
 <ul>
-<li>Link de Download: <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git">Download Git</a></li>
+<li>Link de Download: <a href="https://git-scm.com/book/en/v2/Getting-Started-Installing-Git" class="uri" target="_blank">Download Git</a></li>
 <li>Escolha o instalador apropriado para o seu sistema operacional (Windows, macOS ou Linux).</li>
 <li>Durante a instalação, siga as instruções para uma instalação padrão.</li>
 </ul></li>
 <li><p>Instalação do Quarto<br>
 Quarto é uma ferramenta para criar documentos reprodutíveis, relatórios dinâmicos e dashboards, a partir de código R. Iremos utilizá-lo para gerar o <em>dashboard</em> do nosso projeto de forma automatizada.</p>
 <ul>
-<li>Link de Download: <a href="https://quarto.org/docs/get-started/">Download Quarto</a></li>
+<li>Link de Download: <a href="https://quarto.org/docs/get-started/" class="uri" target="_blank">Download Quarto</a></li>
 <li>Baixe a versão mais recente e siga as instruções para uma instalação padrão no seu sistema operacional.</li>
 </ul></li>
 </ol>
@@ -272,14 +278,14 @@ Quarto é uma ferramenta para criar documentos reprodutíveis, relatórios dinâ
 <section id="conta-gitlab" class="level2" data-number="3.2">
 <h2 data-number="3.2" class="anchored" data-anchor-id="conta-gitlab"><span class="header-section-number">3.2</span> Conta GitLab</h2>
 <p>O <strong>GitLab</strong> é uma plataforma de gestão de repositórios Git que permite aos desenvolvedores colaborar em projetos de software e/ou de dados.</p>
-<p>Além disto, o GitLab fornece recursos avançados de gestão de projetos, como acompanhamento de tarefas, gestão de <em>backlog</em> e integração com <em>kanban</em>, que podem ser muito úteis em projectos de <em>DataOps</em>.</p>
+<p>Além disto, o GitLab fornece recursos avançados de gestão de projetos, como acompanhamento de tarefas, gestão de <em>backlog</em> e integração com <em>kanban</em>, que podem ser muito úteis em projetos de <em>DataOps</em>.</p>
 <p>Uma alternativa popular ao GitLab é o GitHub. Os participantes que prefiram esta segunda opção poderão continuar a acompanhar o curso sem grandes entraves.</p>
 <section id="como-criar-uma-conta-no-gitlab" class="level3" data-number="3.2.1">
 <h3 data-number="3.2.1" class="anchored" data-anchor-id="como-criar-uma-conta-no-gitlab"><span class="header-section-number">3.2.1</span> Como Criar uma Conta no GitLab</h3>
 <ol type="1">
-<li><p>Se ainda não tivermos uma conta no GitLab, podemos aceder ao <a href="https://gitlab.com/">site do GitLab</a>.</p></li>
+<li><p>Se ainda não tivermos uma conta no GitLab, podemos aceder ao <a href="https://gitlab.com/" class="uri" target="_blank">site do GitLab</a>.</p></li>
 <li><p>Na página inicial, clicamos no botão <em>Sign In</em> (Registrar) no canto superior direito.</p></li>
-<li><p>Depois de irmos para <a href="https://gitlab.com/users/sign_up"><em>Register now</em></a>, podemos preencher o Formulário de registo:</p></li>
+<li><p>Depois de irmos para <a href="https://gitlab.com/users/sign_up" class="uri" target="_blank"><em>Register now</em></a>, podemos preencher o Formulário de registo:</p></li>
 </ol>
 <p><img src="images/gitlab_new.jpg" class="img-fluid"></p>
 <p>Após preenchermos todas as informações, clicamos em botão “Continue” (continuar).</p>
@@ -301,17 +307,17 @@ Quarto é uma ferramenta para criar documentos reprodutíveis, relatórios dinâ
 <section id="verificação-de-aprendizagem" class="level2" data-number="3.4">
 <h2 data-number="3.4" class="anchored" data-anchor-id="verificação-de-aprendizagem"><span class="header-section-number">3.4</span> Verificação de aprendizagem</h2>
 <p><strong>O que é o GitLab?</strong></p>
-<div id="radio_JABKRATMNE" class="webex-radiogroup">
-<label><input type="radio" autocomplete="off" name="radio_JABKRATMNE" value=""> <span>Uma ferramenta exclusiva para desenvolvedores web.</span></label><label><input type="radio" autocomplete="off" name="radio_JABKRATMNE" value="answer"> <span>Uma plataforma de gestão de repositórios Git.</span></label><label><input type="radio" autocomplete="off" name="radio_JABKRATMNE" value=""> <span>Um editor de texto online.</span></label>
+<div id="radio_OALIHHIDQN" class="webex-radiogroup">
+<label><input type="radio" autocomplete="off" name="radio_OALIHHIDQN" value=""> <span>Uma ferramenta exclusiva para desenvolvedores web.</span></label><label><input type="radio" autocomplete="off" name="radio_OALIHHIDQN" value="answer"> <span>Uma plataforma de gestão de repositórios Git.</span></label><label><input type="radio" autocomplete="off" name="radio_OALIHHIDQN" value=""> <span>Um editor de texto online.</span></label>
 </div>
 <p><strong>Qual é a principal alternativa ao GitLab que foi mencionada?</strong></p>
-<div id="radio_FPXDORSNCA" class="webex-radiogroup">
-<label><input type="radio" autocomplete="off" name="radio_FPXDORSNCA" value="answer"> <span>GitHub</span></label><label><input type="radio" autocomplete="off" name="radio_FPXDORSNCA" value=""> <span>Bitbucket</span></label><label><input type="radio" autocomplete="off" name="radio_FPXDORSNCA" value=""> <span>SourceForge</span></label><label><input type="radio" autocomplete="off" name="radio_FPXDORSNCA" value=""> <span>Mercurial</span></label>
+<div id="radio_QUVRGLRCON" class="webex-radiogroup">
+<label><input type="radio" autocomplete="off" name="radio_QUVRGLRCON" value="answer"> <span>GitHub</span></label><label><input type="radio" autocomplete="off" name="radio_QUVRGLRCON" value=""> <span>Bitbucket</span></label><label><input type="radio" autocomplete="off" name="radio_QUVRGLRCON" value=""> <span>SourceForge</span></label><label><input type="radio" autocomplete="off" name="radio_QUVRGLRCON" value=""> <span>Mercurial</span></label>
 </div>
 </section>
 <section id="a-seguir" class="level2" data-number="3.5">
 <h2 data-number="3.5" class="anchored" data-anchor-id="a-seguir"><span class="header-section-number">3.5</span> A seguir</h2>
-<p>Agora que instalamos todas as ferramentas necessárias, estamos prontos para começar a explorar como as podemos usar nos nossos projectos em <em>DataOps</em>. No próximo capítulo, iremos introduzir os conceitos básicos de controlo de versões com o Git e começar a configurar o nosso primeiro repositório.</p>
+<p>Agora que instalamos todas as ferramentas necessárias, estamos prontos para começar a explorar como as podemos usar nos nossos projetos em <em>DataOps</em>. No próximo capítulo, iremos introduzir os conceitos básicos de controlo de versões com o Git e começar a configurar o nosso primeiro repositório.</p>
 
 
 </section>

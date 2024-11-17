@@ -1,6 +1,6 @@
 # Publicação
 
-Por fim (e como bónus), vamos tornar público o nosso *dashboard*. Usaremos o serviço [netlify](https://www.netlify.com/), para que, de uma forma simples, rápida e sem custos, possamos publicar o nosso *dashboard* na Internet.
+Por fim (e como bónus), vamos tornar público o nosso *dashboard*. Usaremos o serviço [netlify](https://www.netlify.com/){.uri target="_blank"}, para que, de uma forma simples, rápida e sem custos, possamos publicar o nosso *dashboard* na Internet.
 
 Antes de mais teremos de fazer uma pequena alteração ao nosso projecto:
 
@@ -11,4 +11,4 @@ Agora, apenas temos de entrar no [netlify](https://www.netlify.com/), com a noss
 {{< video https://youtu.be/0fK__haOVxk >}}
 
 
-[IPH](https://iphine.netlify.app/)
+[IPH](https://iphine.netlify.app/){.uri target="_blank"}

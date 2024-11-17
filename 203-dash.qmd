@@ -1,6 +1,6 @@
 # *Dashboard* Quarto
 
-Neste projeto temos como objectivo construir um *dashboard* para descrevermos o Índice de Preços da Habitação (IPC) a partir dos dados obtidos no portal do INE.
+Neste projeto temos como objectivo construir um *dashboard* para descrevermos o Índice de Preços da Habitação (IPH) a partir dos dados obtidos no portal do INE.
 
 Criar *dashboards* com Quarto oferece-nos muitas vantagens, especialmente quando trabalhamos com o R. Podemos combinar visualizações interactivas com um *layout* e *design* costumizável, facilitando o ajuste a diferentes dispositivos, como *mobile* e *desktop*. 
 
@@ -44,7 +44,7 @@ Finalmente, voltamos ao projecto no nosso pc local e fazemos o *pull* do *main b
 
 {{< video https://youtu.be/zQDiQdRHR3M >}}
 
-[*script* Quarto](R/dash_IPH.qmd)
+[*script* Quarto](R/dash_IPH.qmd){.uri target="_blank"}
 
 ## Verificação de aprendizagem
 
